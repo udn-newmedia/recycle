@@ -2,7 +2,7 @@
   <div class="frame frame-22 summary-style over-vh">
     <div class="frame-22__summary-layout summary-layout"><!--
       --><div class="frame-22__summary summary">
-        <p>環保署資源回收管理基金管理會雖提供連泰、正隆兩家末端處理厰每公斤新台幣7.25元的補助，讓兩家處理厰能以每公斤5.25元的價格向回收商收購紙容器，但造紙工會同業公會秘書長謝世平指出，國內一般廢紙平均收購價現約一公斤4.5元，跟紙容器的5.25元僅差0.75元，差距不夠大，應至少差2元，回收商才有誘因。</p>
+        <p>造紙工業同業公會秘書長謝世平表示，國內一般廢紙平均收購價現約一公斤4.5元，跟紙容器的5.25元僅差0.75元，差距不夠大，應至少差2元，回收商才有誘因。</p>
 
         <img alt="環保署紙容器補貼機制"
           src="@/assets/images/story3/index_part3_article_chart2_m.svg">

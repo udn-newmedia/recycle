@@ -2,7 +2,7 @@
   <div class="frame frame-17 summary-style over-vh">
     <div class="summary-layout">
       <div class="frame-17__summary summary">
-        <p>經記者實地了解，兩家處理廠目前每月含鋁箔包與紙餐具處理量相加約5500噸，一年約6萬多噸，與全台各縣市每年超過10萬噸的應回收量有不小差距，其餘沒有進到這兩家的紙容器，最後都走上廢棄物的命運。</p>
+        <p>餐盒、紙杯等紙餐具2018年回收量共4萬噸，經記者詢問，環保署對於回收率並無掌握，但依造紙公會推估，回收率不會超過25％，連泰紙業更悲觀推估回收率僅10％，代表至少還有12萬噸紙餐具流落在外。</p>
         <img alt="紙容器回收量"
           src="@/assets/images/story3/index_part3_article_chart1.svg">
       </div>

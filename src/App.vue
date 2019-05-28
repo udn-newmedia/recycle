@@ -307,7 +307,7 @@ export default {
     Logo,
     Relate,
     Share,
-    Question
+    Question,
   },
   data () {
     return {
