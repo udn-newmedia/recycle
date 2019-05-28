@@ -25,7 +25,7 @@
     </div>
     <div class="slide-menu">
       <div class="buttons">
-        <a href="https://udn.com/upf/newmedia/2019_data/recycle/" class="button" title="民眾回收一場空" target="_blank">民眾回收一場空</a>
+        <a href="https://udn.com/upf/newmedia/2019_data/recycle/" class="button" title="民眾回收一場空" target="_blank" style="font-weight:700;color:#464646;">民眾回收一場空</a>
         <a href="https://udn.com/upf/newmedia/2019_data/recycle/government" class="button" title="政府燒錢有用嗎" target="_blank">政府燒錢有用嗎</a>
         <a href="https://udn.com/upf/newmedia/2019_data/recycle/reduction" class="button" title="環保不只一條路" target="_blank">環保不只一條路</a>
       </div>

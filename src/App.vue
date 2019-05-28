@@ -384,27 +384,27 @@ export default {
     },
   },
   beforeDestroy () {
-    // window.removeEventListener('beforeunload', this.onBeforeUnload)
+    window.removeEventListener('beforeunload', this.onBeforeUnload)
   },
   mounted () {
-    // window.addEventListener('beforeunload', this.onBeforeUnload)
-    // // observe story intersetion
-    // this.observer = new IntersectionObserver(this.onStoryIntersection, {
-    //   root: null,
-    //   rootMargin: '0px 0px 0px 0px',
-    //   threshold: THRESHOLD
-    // })
-    // let stories = [
-    //   this.$refs.story0,
-    //   this.$refs.story1,
-    //   this.$refs.story2,
-    //   this.$refs.story3,
-    //   this.$refs.story4,
-    //   this.$refs.story5
-    // ]
-    // stories.forEach((story) => {
-    //   this.observer.observe(story.$el)
-    // })
+    window.addEventListener('beforeunload', this.onBeforeUnload)
+    // observe story intersetion
+    this.observer = new IntersectionObserver(this.onStoryIntersection, {
+      root: null,
+      rootMargin: '0px 0px 0px 0px',
+      threshold: THRESHOLD
+    })
+    let stories = [
+      this.$refs.story0,
+      this.$refs.story1,
+      this.$refs.story2,
+      this.$refs.story3,
+      this.$refs.story4,
+      this.$refs.story5
+    ]
+    stories.forEach((story) => {
+      this.observer.observe(story.$el)
+    })
   }
 }
 </script>

@@ -8,8 +8,12 @@
       <rect width="109" height="30" rx="5" stroke="none"/>
       <rect x="1.5" y="1.5" width="106" height="27" rx="3.5" fill="none"/>
     </g>
+    <g id="Rectangle_473" data-name="Rectangle 473" transform="translate(1076 3720)" fill="none" stroke="#f86e6e" stroke-width="3">
+      <path d="M5,0H68a0,0,0,0,1,0,0V65a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" stroke="none"/>
+      <path d="M5,1.5H65A1.5,1.5,0,0,1,66.5,3V65A3.5,3.5,0,0,1,63,68.5H5A3.5,3.5,0,0,1,1.5,65V5A3.5,3.5,0,0,1,5,1.5Z" fill="none"/>
+    </g>
     <rect id="Rectangle_459" data-name="Rectangle 459" width="146" height="37" transform="translate(1080 3771)" fill="#30343f"/>
-    <line id="Line_31" data-name="Line 31" y2="154" transform="translate(1145.5 3567.5)" fill="none" stroke="#c9c9c9" stroke-width="3"/>
+    <line id="Line_31" data-name="Line 31" y2="153" transform="translate(1145.5 3567.5)" fill="none" stroke="#c9c9c9" stroke-width="3"/>
     <g id="Rectangle_456" data-name="Rectangle 456" transform="translate(1025 3523)" fill="#30343f" stroke="#c9c9c9" stroke-width="3">
       <rect width="119" height="28" rx="5" stroke="none"/>
       <rect x="1.5" y="1.5" width="116" height="25" rx="3.5" fill="none"/>
@@ -44,7 +48,7 @@
       <rect x="1" y="1" width="98.743" height="40.063" rx="2" fill="none"/>
     </g>
     <text id="紙廠" transform="translate(918 3696)" fill="#f86e6e" font-size="18" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="0" y="19">紙廠</tspan></text>
-    <text id="業者自己偷燒掉" transform="translate(1023 3831.685)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="0" y="16">業者自己偷燒掉</tspan></text>
+    <text id="業者自己偷燒掉" transform="translate(1023 3831.685)" fill="#f86e6e" font-size="15" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="0" y="16">業者自己偷燒掉</tspan></text>
     <rect id="Rectangle_455" data-name="Rectangle 455" width="125" height="48" rx="3" transform="translate(1203 3781)" fill="#f5f5f5"/>
     <text id="專業處理廠" transform="translate(1221 3794)" fill="#333" font-size="18" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="0" y="19">專業處理廠</tspan></text>
     <rect id="Rectangle_455-2" data-name="Rectangle 455" width="125" height="48" rx="3" transform="translate(1202 3865)" fill="#f5f5f5"/>
@@ -61,11 +65,17 @@
     <line id="Line_28" data-name="Line 28" y2="182" transform="translate(836.5 3589.5)" fill="none" stroke="#f86e6e" stroke-width="3"/>
     <line id="Line_29" data-name="Line 29" y2="45" transform="translate(934.5 3728.5)" fill="none" stroke="#f86e6e" stroke-width="3"/>
     <line id="Line_26" data-name="Line 26" y2="19" transform="translate(888.5 3384.5)" fill="none" stroke="#c9c9c9" stroke-width="3"/>
-    <rect id="Rectangle_452" data-name="Rectangle 452" width="264.744" height="73.038" rx="3" transform="translate(1013 3633)" fill="#fff"/>
+    <g id="Rectangle_452" data-name="Rectangle 452" transform="translate(1013 3633)" fill="#fff" stroke="#f86e6e" stroke-width="3">
+      <rect width="264.744" height="73.038" rx="3" stroke="none"/>
+      <rect x="1.5" y="1.5" width="261.744" height="70.038" rx="1.5" fill="none"/>
+    </g>
     <text id="回收商" transform="translate(1116 3649)" fill="#333" font-size="18" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="0" y="19">回收商</tspan></text>
     <text id="大盤_中盤_小盤商" data-name="大盤、中盤、小盤商" transform="translate(1059 3674)" fill="#333" font-size="15" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="0" y="16">大盤、中盤、小盤商</tspan></text>
-    <rect id="Rectangle_454" data-name="Rectangle 454" width="125" height="48" rx="3" transform="translate(1014 3781)" fill="#f5f5f5"/>
-    <text id="回收場火災" transform="translate(1031 3794)" fill="#333" font-size="18" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="0" y="19">回收場火災</tspan></text>
+    <g id="Rectangle_454" data-name="Rectangle 454" transform="translate(1014 3781)" fill="#30343f" stroke="#f86e6e" stroke-width="2">
+      <rect width="125" height="48" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="123" height="46" rx="2" fill="none"/>
+    </g>
+    <text id="回收場火災" transform="translate(1031 3794)" fill="#f86e6e" font-size="18" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="0" y="19">回收場火災</tspan></text>
     <text id="紙餐盒的命運分歧點" transform="translate(726 3280)" fill="#fff" font-size="30" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="27.5" y="32">紙餐盒的命運分歧點</tspan></text>
     <rect id="Rectangle_461" data-name="Rectangle 461" width="125" height="68" transform="translate(753 3406)" fill="#30343f"/>
     <rect id="Rectangle_462" data-name="Rectangle 462" width="74" height="21" transform="translate(839 3406)" fill="#30343f"/>
