@@ -183,7 +183,9 @@
         text4="廢紙廢塑膠大量進口 監委促請主管機關改進" href4="https://udn.com/news/story/7314/3743420" :img4="require('@/assets/images/story5/index_part5_read4.jpg')">
       </relate>
     </content-container>
-    <!-- <FbComment /> -->
+    <content-container>
+      <FbComment />
+    </content-container>
     <Footer />
     <!-- <div style="height: 100vh; border: 4px solid crimson;"></div> -->
 
