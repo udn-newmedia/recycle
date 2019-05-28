@@ -3,7 +3,7 @@
     <div class="frame-30__contents">
       <div class="frame-30__content">
         <div class="frame-30__title">
-          <p>知道紙餐盒的命運後，身為民眾的你，想要怎麼做？</p>
+          <p>紙餐盒回收過程中漏洞不斷，讓多數餐盒無法進入回收體系，知道紙餐盒的命運後，身為民眾的你，想要怎麼做？</p>
         </div>
         <div class="frame-30__choose-layout"><!--
           --><div class="frame-30__choose">

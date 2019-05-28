@@ -129,7 +129,7 @@ export default {
       let progress = event.progress.toFixed(2)
       this.bgBlur = Math.floor((1 - progress) * BLUR_DEFAULT)
     })
-    .addIndicators({ name: 'bg-blur' })
+    // .addIndicators({ name: 'bg-blur' })
 
     // sticky
     let height =  window.innerHeight;
@@ -140,7 +140,7 @@ export default {
     })
     .addTo(this.ctrl)
     .setPin(this.$refs.bg)
-    .addIndicators({ name: 'bg-sticky' })
+    // .addIndicators({ name: 'bg-sticky' })
 
     // topic
     let topicTween = new TimelineMax()
@@ -156,7 +156,7 @@ export default {
     .addTo(this.ctrl)
     .setTween(topicTween)
     .setPin(this.$refs.topic)
-    .addIndicators({ name: 'topic' })
+    // .addIndicators({ name: 'topic' })
 
     if(this.isPause==true){
       new this.$sm.Scene({
@@ -171,7 +171,7 @@ export default {
       .on('leave', ()=>{
         this.play()
       })
-      .addIndicators({ name: 'story-video-pause' })
+      // .addIndicators({ name: 'story-video-pause' })
     }
   }
 }

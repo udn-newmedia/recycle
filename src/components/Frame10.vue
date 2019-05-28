@@ -56,7 +56,7 @@ export default {
     .on('start', function (event) {
       trashTween.time(0)
     })
-    .addIndicators({ name: 'trash-frame10' })
+    // .addIndicators({ name: 'trash-frame10' })
   }
 }
 </script>

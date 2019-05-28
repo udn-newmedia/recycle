@@ -26,7 +26,7 @@ export default {
     })
     .addTo(this.ctrl)
     .setTween(this.$refs.bg, 1, { opacity: 1 })
-    .addIndicators({ name: 'fade-bg-frame12' })
+    // .addIndicators({ name: 'fade-bg-frame12' })
   }
 }
 </script>

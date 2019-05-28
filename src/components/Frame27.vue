@@ -45,7 +45,7 @@ export default {
     .on('start', function (event) {
       trashTween.time(0)
     })
-    .addIndicators({ name: 'content-frame27' })
+    // .addIndicators({ name: 'content-frame27' })
   }
 }
 </script>

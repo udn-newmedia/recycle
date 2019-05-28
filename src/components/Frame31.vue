@@ -5,7 +5,8 @@
       ref="triggerBlackhole" />
 
     <div ref="bhcontent" class="frame-31__contents blackhole-contents">
-      <div ref="blackhole" class="frame-31__blackhole blackhole"></div>
+      <hr style="margin:0;">
+      <div ref="blackhole" class="frame-31__blackhole" style="width:100%;height:100vh;background:rgb(48, 52, 63);"></div>
 
       <div ref="content" class="frame-31__content content">
         <!-- <div class="spacer2"></div> -->

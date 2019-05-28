@@ -56,7 +56,7 @@ export default {
     //       this.isBlur = false
     //   }
     // })
-    .addIndicators({ name: 'fixed-video21' })
+    // .addIndicators({ name: 'fixed-video21' })
   }
 }
 </script>

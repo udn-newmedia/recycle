@@ -96,7 +96,7 @@ export default {
     .on('leave', ()=>{
       this.play()
     })
-    .addIndicators({ name: 'auto-video' })
+    // .addIndicators({ name: 'auto-video' })
   }
 }
 </script>

@@ -52,7 +52,7 @@ export default {
     //       this.isBlur = false
     //   }
     // })
-    .addIndicators({ name: 'fixed-video7' })
+    // .addIndicators({ name: 'fixed-video7' })
   }
 }
 </script>

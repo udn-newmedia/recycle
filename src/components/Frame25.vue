@@ -28,7 +28,7 @@ export default {
     })
     .addTo(this.ctrl)
     .setTween(this.$refs.bg, 1, { opacity: 1 })
-    .addIndicators({ name: 'fadeout-frame25' })
+    // .addIndicators({ name: 'fadeout-frame25' })
   }
 }
 </script>
