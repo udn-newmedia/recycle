@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="383.5" height="184" viewBox="0 0 383.5 184">
+  <g id="government_chart_m" transform="translate(-16 -7589)">
+    <text id="_4.5元_隨市場價格波動_" data-name="4.5元（隨市場價格波動）" transform="translate(16 7634)" fill="#333" font-size="21" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="43.409" y="23">4.5元</tspan><tspan font-size="15"><tspan x="1" y="44.5">（隨市場價格波動）</tspan></tspan></text>
+    <text id="_5.25元_政府明定_" data-name="5.25元（政府明定）" transform="translate(16 7721)" fill="#333" font-size="21" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="37.323" y="23">5.25元</tspan><tspan font-size="15"><tspan x="23.5" y="44.5">（政府明定）</tspan></tspan></text>
+    <text id="_3元_隨市場價格波動_" data-name="3元（隨市場價格波動）" transform="translate(262 7721)" fill="#333" font-size="21" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="51.914" y="23">3元</tspan><tspan font-size="15"><tspan x="1" y="44.5">（隨市場價格波動）</tspan></tspan></text>
+    <text id="_2.2元_隨市場價格波動_" data-name="2.2元（隨市場價格波動）" transform="translate(262 7634)" fill="#333" font-size="21" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="43.409" y="23">2.2元</tspan><tspan font-size="15"><tspan x="1" y="44.5">（隨市場價格波動）</tspan></tspan></text>
+    <text id="大盤商" transform="translate(53 7589)" fill="#e94f4b" font-size="21" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="23">大盤商</tspan></text>
+    <text id="中_小盤商" data-name="中、小盤商" transform="translate(275 7589)" fill="#e94f4b" font-size="21" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="23">中、小盤商</tspan></text>
+    <line id="Line_32" data-name="Line 32" x2="383" transform="translate(16.5 7703.5)" fill="none" stroke="#b7b7b7" stroke-width="1"/>
+    <g id="Group_788" data-name="Group 788" transform="translate(0 -123)">
+      <rect id="Rectangle_478" data-name="Rectangle 478" width="47" height="33" rx="5" transform="translate(184 7767)" fill="#e94f4b"/>
+      <text id="紙類" transform="translate(192 7774)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="0" y="16">紙類</tspan></text>
+    </g>
+    <g id="Group_787" data-name="Group 787" transform="translate(-9 -120)">
+      <rect id="Rectangle_479" data-name="Rectangle 479" width="65" height="33" rx="5" transform="translate(184 7850)" fill="#e94f4b"/>
+      <text id="紙容器" transform="translate(194 7857)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="0" y="16">紙容器</tspan></text>
+    </g>
+  </g>
+</svg>
