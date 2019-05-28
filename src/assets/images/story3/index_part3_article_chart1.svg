@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400.202" height="315.65" viewBox="0 0 400.202 315.65">
+  <g id="index_part3_article_chart1" transform="translate(-56.5 -97.371)">
+    <text id="_0" data-name="0" transform="translate(90.823 373.371)" fill="#333" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">0</tspan></text>
+    <text id="_20000" data-name="20000" transform="translate(132.232 373.371)" fill="#333" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">20000</tspan></text>
+    <text id="_40000" data-name="40000" transform="translate(188.552 373.371)" fill="#333" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">40000</tspan></text>
+    <text id="_60000" data-name="60000" transform="translate(244.901 373.371)" fill="#333" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">60000</tspan></text>
+    <text id="_80000" data-name="80000" transform="translate(301.221 373.371)" fill="#333" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">80000</tspan></text>
+    <text id="_100000" data-name="100000" transform="translate(353.828 373.371)" fill="#333" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">100000</tspan></text>
+    <text id="_120000" data-name="120000" transform="translate(409.148 373.371)" fill="#333" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">120000</tspan></text>
+    <line id="Line_3" data-name="Line 3" x2="337.979" transform="translate(93.537 355.024)" fill="none" stroke="#e2e2e2" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_4" data-name="Line 4" y1="5.427" transform="translate(93.537 349.654)" fill="none" stroke="#e2e2e2" stroke-miterlimit="10" stroke-width="0.72"/>
+    <line id="Line_5" data-name="Line 5" y1="5.427" transform="translate(149.886 349.654)" fill="none" stroke="#e2e2e2" stroke-miterlimit="10" stroke-width="0.72"/>
+    <line id="Line_6" data-name="Line 6" y1="5.427" transform="translate(206.206 349.654)" fill="none" stroke="#e2e2e2" stroke-miterlimit="10" stroke-width="0.72"/>
+    <line id="Line_7" data-name="Line 7" y1="5.427" transform="translate(262.526 349.654)" fill="none" stroke="#f2f2f2" stroke-miterlimit="10" stroke-width="0.72"/>
+    <line id="Line_8" data-name="Line 8" y1="5.427" transform="translate(318.875 349.654)" fill="none" stroke="#e2e2e2" stroke-miterlimit="10" stroke-width="0.72"/>
+    <line id="Line_9" data-name="Line 9" y1="5.427" transform="translate(375.196 349.654)" fill="none" stroke="#e2e2e2" stroke-miterlimit="10" stroke-width="0.72"/>
+    <line id="Line_10" data-name="Line 10" y1="5.427" transform="translate(431.516 349.654)" fill="none" stroke="#e2e2e2" stroke-miterlimit="10" stroke-width="0.72"/>
+    <rect id="Rectangle_411" data-name="Rectangle 411" width="282.323" height="57.66" transform="translate(93.537 206.617)" fill="#c2aff0"/>
+    <text id="_106年" data-name="106年" transform="translate(56.5 240.787)" fill="#333" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">106</tspan><tspan y="0" font-family="MicrosoftJhengHeiLight, Microsoft JhengHei">年</tspan></text>
+    <rect id="Rectangle_412" data-name="Rectangle 412" width="282.323" height="57.66" transform="translate(93.537 275.61)" fill="#c2aff0"/>
+    <text id="_107年" data-name="107年" transform="translate(56.5 309.161)" fill="#333" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">107</tspan><tspan y="0" font-family="MicrosoftJhengHeiLight, Microsoft JhengHei">年</tspan></text>
+    <text id="_105年" data-name="105年" transform="translate(56.5 172.371)" fill="#333" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">105</tspan><tspan y="0" font-family="MicrosoftJhengHeiLight, Microsoft JhengHei">年</tspan></text>
+    <text id="單位_噸" data-name="單位：噸" transform="translate(396.702 409.021)" fill="#333" font-size="15" font-family="MicrosoftJhengHeiLight, Microsoft JhengHei"><tspan x="0" y="0">單位：噸</tspan></text>
+    <text id="應回收量" transform="translate(191.022 114.371)" fill="#333" font-size="16" font-family="MicrosoftJhengHeiLight, Microsoft JhengHei"><tspan x="0" y="0">應回收量</tspan></text>
+    <rect id="Rectangle_413" data-name="Rectangle 413" width="247.769" height="57.683" transform="translate(93.537 137.371)" fill="#c2aff0"/>
+  </g>
+</svg>
