@@ -1,20 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="325.035" viewBox="0 0 400 325.035">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="389" height="325.035" viewBox="0 0 389 325.035">
   <defs>
-    <filter id="_21_992" x="166.206" y="68.597" width="49" height="29" filterUnits="userSpaceOnUse">
+    <filter id="_21_992" x="37.206" y="68.597" width="49" height="29" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feFlood flood-opacity="0.78"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="_25_060" x="179.576" y="134.97" width="49" height="29" filterUnits="userSpaceOnUse">
+    <filter id="_25_060" x="34.576" y="134.97" width="49" height="29" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur-2"/>
       <feFlood flood-opacity="0.78"/>
       <feComposite operator="in" in2="blur-2"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="_40_670" x="265.633" y="198.712" width="49" height="29" filterUnits="userSpaceOnUse">
+    <filter id="_40_670" x="38.633" y="198.712" width="49" height="29" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur-3"/>
       <feFlood flood-opacity="0.78"/>
@@ -22,18 +22,14 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="index_part3_article_chart1" transform="translate(-217.5 -156.189)">
-    <line id="Line_40" data-name="Line 40" y1="178.972" transform="translate(267.753 214.061)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.56"/>
+  <g id="index_part3_article_chart1" transform="translate(-228.5 -156.189)">
     <line id="Line_43" data-name="Line 43" x2="8.171" transform="translate(267.753 256.774)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.56"/>
-    <rect id="Rectangle_475" data-name="Rectangle 475" width="28.738" height="50" transform="translate(382.746 214.179)" fill="#ee964b"/>
-    <rect id="Rectangle_476" data-name="Rectangle 476" width="32.765" height="50" transform="translate(398.812 280.329)" fill="#ee964b"/>
-    <rect id="Rectangle_477" data-name="Rectangle 477" width="53.174" height="50" transform="translate(480.448 343.479)" fill="#ee964b"/>
     <rect id="Rectangle_478" data-name="Rectangle 478" width="115.032" height="50" transform="translate(267.753 214.179)" fill="#7681b3"/>
     <rect id="Rectangle_479" data-name="Rectangle 479" width="131.06" height="50" transform="translate(267.753 280.329)" fill="#7681b3"/>
     <rect id="Rectangle_480" data-name="Rectangle 480" width="212.695" height="50" transform="translate(267.753 343.479)" fill="#7681b3"/>
-    <text id="_106年" data-name="106年" transform="translate(217.5 317.08)" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">106</tspan><tspan y="0" font-family="MicrosoftJhengHeiLight, Microsoft JhengHei">年</tspan></text>
-    <text id="_107年" data-name="107年" transform="translate(217.5 380.428)" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">107</tspan><tspan y="0" font-family="MicrosoftJhengHeiLight, Microsoft JhengHei">年</tspan></text>
-    <text id="_105年" data-name="105年" transform="translate(217.5 245.128)" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">105</tspan><tspan y="0" font-family="MicrosoftJhengHeiLight, Microsoft JhengHei">年</tspan></text>
+    <text id="_106年" data-name="106年" transform="translate(228.5 311.08)" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">106</tspan><tspan y="0" font-family="MicrosoftJhengHeiLight, Microsoft JhengHei">年</tspan></text>
+    <text id="_107年" data-name="107年" transform="translate(228.5 375.428)" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">107</tspan><tspan y="0" font-family="MicrosoftJhengHeiLight, Microsoft JhengHei">年</tspan></text>
+    <text id="_105年" data-name="105年" transform="translate(228.5 245.128)" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">105</tspan><tspan y="0" font-family="MicrosoftJhengHeiLight, Microsoft JhengHei">年</tspan></text>
     <g id="Group_783" data-name="Group 783">
       <text id="_0" data-name="0" transform="translate(263.489 419.326)" fill="#8e8e8e" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">0</tspan></text>
       <text id="_50000" data-name="50000" transform="translate(311.808 419.326)" fill="#8e8e8e" font-size="13" font-family="ArialMT, Arial"><tspan x="0" y="0">50000</tspan></text>
@@ -58,17 +54,21 @@
     <text id="應回收量_回收量_回收率_" data-name="應回收量（回收量／回收率）" transform="translate(293.688 168.4)" font-size="11" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="0" y="0">應回收量（回收量／回收率）</tspan></text>
     <rect id="Rectangle_482" data-name="Rectangle 482" width="22.541" height="13.027" transform="translate(268.554 175.19)" fill="#ee964b"/>
     <text id="回收量" transform="translate(294.016 187.4)" font-size="11" font-family="MicrosoftJhengHeiRegular, Microsoft JhengHei"><tspan x="0" y="0">回收量</tspan></text>
-    <text id="_87_968" data-name="87,968" transform="translate(310.939 242.786)" fill="#fff" font-size="10" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">87,968</tspan></text>
-    <g transform="matrix(1, 0, 0, 1, 217.5, 156.19)" filter="url(#_21_992)">
-      <text id="_21_992-2" data-name="21,992" transform="translate(175.21 86.6)" fill="#fff" font-size="10" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">21,992</tspan></text>
+    <text id="_87_968" data-name="87,968" transform="translate(346.939 242.786)" fill="#fff" font-size="10" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">87,968</tspan></text>
+    <text id="_100_240" data-name="100,240" transform="translate(357.913 309.16)" fill="#fff" font-size="10" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">100,240</tspan></text>
+    <text id="_162_680" data-name="162,680" transform="translate(438.913 372.901)" fill="#fff" font-size="10" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">162,680</tspan></text>
+    <rect id="Rectangle_475" data-name="Rectangle 475" width="28.738" height="50" transform="translate(267.746 214.179)" fill="#ee964b"/>
+    <g transform="matrix(1, 0, 0, 1, 228.5, 156.19)" filter="url(#_21_992)">
+      <text id="_21_992-2" data-name="21,992" transform="translate(46.21 86.6)" fill="#fff" font-size="10" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">21,992</tspan></text>
     </g>
-    <g transform="matrix(1, 0, 0, 1, 217.5, 156.19)" filter="url(#_25_060)">
-      <text id="_25_060-2" data-name="25,060" transform="translate(188.58 152.97)" fill="#fff" font-size="10" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">25,060</tspan></text>
+    <rect id="Rectangle_476" data-name="Rectangle 476" width="32.765" height="50" transform="translate(267.812 280.329)" fill="#ee964b"/>
+    <g transform="matrix(1, 0, 0, 1, 228.5, 156.19)" filter="url(#_25_060)">
+      <text id="_25_060-2" data-name="25,060" transform="translate(43.58 152.97)" fill="#fff" font-size="10" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">25,060</tspan></text>
     </g>
-    <text id="_100_240" data-name="100,240" transform="translate(312.913 309.16)" fill="#fff" font-size="10" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">100,240</tspan></text>
-    <text id="_162_680" data-name="162,680" transform="translate(312.913 372.901)" fill="#fff" font-size="10" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">162,680</tspan></text>
-    <g transform="matrix(1, 0, 0, 1, 217.5, 156.19)" filter="url(#_40_670)">
-      <text id="_40_670-2" data-name="40,670" transform="translate(274.63 216.71)" fill="#fff" font-size="10" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">40,670</tspan></text>
+    <rect id="Rectangle_477" data-name="Rectangle 477" width="53.174" height="50" transform="translate(267.448 343.479)" fill="#ee964b"/>
+    <g transform="matrix(1, 0, 0, 1, 228.5, 156.19)" filter="url(#_40_670)">
+      <text id="_40_670-2" data-name="40,670" transform="translate(47.63 216.71)" fill="#fff" font-size="10" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">40,670</tspan></text>
     </g>
+    <path id="Path_1102" data-name="Path 1102" d="M0,178.972V0" transform="translate(267.753 214.061)" fill="none" stroke="#000" stroke-width="0.56"/>
   </g>
 </svg>
