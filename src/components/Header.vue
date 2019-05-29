@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" :class="{ scrolled: scrolled }">
     <ProgressBar />
     <div class="udn-logo">
       <a href="https://ubrand.udn.com/ubrand/index" class="logo" title="回首頁" target="_blank">
@@ -44,7 +44,8 @@ export default {
     ScrollSpy
   },
   props: {
-    focusStory: { type: String, default: null }
+    focusStory: { type: String, default: null },
+    scrolled: Boolean
   },
   methods: {
     onBurgerClick () {
