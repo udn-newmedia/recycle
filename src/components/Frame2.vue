@@ -11,7 +11,7 @@
     --><a class="frame-2__share-facebook" title="FB分享" @click.prevent.stop="onShareFacebook"><!--
       --><i class="fab fa-facebook-f" /></a><!--
     --><a class="frame-2__share-line" title="LINE分享" target="_blank" :href="lineSharedUrl"><!--
-      --><i class="fab fa-line" /></a>
+      --><img src="@/assets/images/share-line.png" alt="LINE分享" /></a>
     </div>
   </div>
 </template>
@@ -123,50 +123,18 @@ export default {
       color: #E8E8E8;
       vertical-align: middle;
     }
-
-    @include rwd($RWD_DESKTOP_WIDE) {
-      a {
-        width: 107px;
-        height: 107px;
-      }
-
-      a + a {
-        margin-left: 22px;
-      }
-
-      i {
-        font-size: 3.125rem;
-      }
-    }
   }
 
   &__share-facebook {
   }
 
   &__share-line {
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 16px solid #30343f;
-    }
+    text-align: center;
 
-    i {
-      color: #30343f;
-      font-size: 2.4375em;
-      background: #E8E8E8;
-    }
-
-    @include rwd($RWD_DESKTOP_WIDE) {
-      &:after {
-        content: "";
-        border: 21px solid #30343f;
-      }
-
-      font-size: 2.1875rem;
+    img {
+      display: inline-block;
+      width: 70%;
+      vertical-align: middle;
     }
   }
 }

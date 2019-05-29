@@ -62,13 +62,23 @@ export default {
     z-index: 999;
     position: fixed;
     width: 100%;
+    top: 0;
     height: 48px;
     padding-top: 2px;
     background-color: #F7F7F7;
     box-shadow: 0 8px 6px -6px rgba(#a4a4a4, .3);
+    transform: translateY(-100%);
+    transition: transform 0.1s linear;
+    backface-visibility: hidden;
 
     @include rwd($RWD_DESKTOP) {
       height: 55px;
+    }
+
+    &.scrolled {
+      transform: translateY(0);
+      transition: transform 0.1s linear;
+      backface-visibility: hidden;
     }
   }
 
@@ -81,7 +91,7 @@ export default {
     padding-right: 46px;
 
     @include use-vertical-align();
-    // outline: 1px solid red;
+
     @include rwd($RWD_DESKTOP) {
       padding-right: 0;
       text-align: right;
@@ -170,8 +180,9 @@ export default {
       color: #ACACAC;
       text-decoration: none;
 
-      &.focus {
-        color: rgb(70, 70, 70);
+      &.active {
+        color: #464646;
+        font-weight: 700;
       }
     }
 
@@ -209,6 +220,11 @@ export default {
         text-align: center;
         text-decoration: none;
         border-bottom: 1px solid rgb(240, 240, 240);
+
+        &.active {
+          color: #464646;
+          font-weight: 700;
+        }
       }
     }
 

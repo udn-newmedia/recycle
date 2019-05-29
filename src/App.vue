@@ -3,7 +3,9 @@
     <Header
       :focus-story="focusStory"
       @slideMenuTrigger="onClassChange"
-      @scrollSpyJump="onScrollSpyJump">
+      @scrollSpyJump="onScrollSpyJump"
+      :onSliceMenuTrigger="onClassChange"
+      :scrolled= isScrolled>
     </Header>
 
     <Story
@@ -18,19 +20,8 @@
       :ctrl="ctrl"
       :height="height*3">
       <Frame2 />
-      <!-- <Frame3 /> -->
       <Frame4 />
     </Story>
-
-    <!-- <StoryTransition
-      :backward="0"
-      :forward="1"
-      :from-photo="require('@/assets/images/story0/index_cover_background_video_m.jpg')"
-      :from-photo-large="require('@/assets/images/story0/index_cover_background_video_pc.jpg')"
-      :to-photo="require('./assets/images/story1/index_part1_background_video1_m.jpg')"
-      :to-photo-large="require('./assets/images/story1/index_part1_background_video1_pc.jpg')"
-      :ctrl="ctrl"
-      @transition="onTransition" /> -->
 
     <Story
       ref="story1"
@@ -43,21 +34,10 @@
       :ctrl="ctrl"
       :height="height*4"
       :isPause="true">
-      <!-- <div style="height: 100vh; border: 4px solid crimson;"></div> -->
       <Frame6 />
       <Frame7 :ctrl="ctrl"/>
       <Frame8 />
     </Story>
-
-    <!-- <StoryTransition
-      :backward="1"
-      :forward="2"
-      :from-photo="require('./assets/images/story1/index_part1_background_video1_m.jpg')"
-      :from-photo-large="require('./assets/images/story1/index_part1_background_video1_pc.jpg')"
-      :to-photo="require('@/assets/images/story2/index_part2_background_img1_m.jpg')"
-      :to-photo-large="require('@/assets/images/story2/index_part2_background_img1_pc.jpg')"
-      :ctrl="ctrl"
-      @transition="onTransition" /> -->
 
     <Story
       ref="story2"
@@ -72,16 +52,6 @@
       <Frame12 :ctrl="ctrl"/>
       <Frame13 :ctrl="ctrl"/>
     </Story>
-
-    <!-- <StoryTransition
-      :backward="2"
-      :forward="3"
-      :from-photo="require('@/assets/images/story2/index_part2_background_img1_m.jpg')"
-      :from-photo-large="require('@/assets/images/story2/index_part2_background_img1_pc.jpg')"
-      :to-photo="require('@/assets/images/story3/index_part3_background_img1_m.jpg')"
-      :to-photo-large="require('@/assets/images/story3/index_part3_background_img1_pc.jpg')"
-      :ctrl="ctrl"
-      @transition="onTransition" /> -->
 
     <Story
       ref="story3"
@@ -106,16 +76,6 @@
       <Frame26 />
     </Story>
 
-    <!-- <StoryTransition
-      :backward="3"
-      :forward="4"
-      :from-photo="require('@/assets/images/story3/index_part3_background_img1_m.jpg')"
-      :from-photo-large="require('@/assets/images/story3/index_part3_background_img1_pc.jpg')"
-      :to-photo="require('@/assets/images/story4/index_part4_background_img_m.jpg')"
-      :to-photo-large="require('@/assets/images/story4/index_part4_background_img_pc.jpg')"
-      :ctrl="ctrl"
-      @transition="onTransition" /> -->
-
     <Story
       ref="story4"
       :id="4"
@@ -128,16 +88,6 @@
       <Frame28 :ctrl="ctrl"/>
     </Story>
 
-    <!-- <StoryTransition
-      :backward="4"
-      :forward="5"
-      :from-photo="require('@/assets/images/story4/index_part4_background_img_m.jpg')"
-      :from-photo-large="require('@/assets/images/story4/index_part4_background_img_pc.jpg')"
-      :to-photo="require('@/assets/images/story5/index_part5_background_img_m.jpg')"
-      :to-photo-large="require('@/assets/images/story5/index_part5_background_img_pc.jpg')"
-      :ctrl="ctrl"
-      @transition="onTransition" /> -->
-
     <Story
       ref="story5"
       :id="5"
@@ -148,7 +98,6 @@
       :height="height*5">
       <Frame30 />
       <Frame31 :ctrl="ctrl"/>
-      <!-- <Frame32 /> -->
     </Story>
     <content-container style="background:#30343f;color:#e4e4e4;">
       <br>
@@ -176,7 +125,7 @@
       <br>
       <br>
       <br>
-      <relate 
+      <relate
         text1="調查報導／塑膠袋垃圾危機 真正回收不到一成" href1="https://udn.com/news/story/7266/3726270" :img1="require('@/assets/images/story5/index_part5_read1.jpg')"
         text2="清潔隊回收物全丟垃圾車 宜蘭市公所查辦" href2="https://udn.com/news/story/7328/3774913" :img2="require('@/assets/images/story5/index_part5_read2.jpg')"
         text3="翻出廢帳單... 亂丟垃圾重罰6千" href3="https://udn.com/news/story/7325/3742399" :img3="require('@/assets/images/story5/index_part5_read3.jpg')"
@@ -187,6 +136,7 @@
       <FbComment />
     </content-container>
     <Footer />
+    <GoTop />
     <!-- <div style="height: 100vh; border: 4px solid crimson;"></div> -->
 
   </div>
@@ -195,12 +145,10 @@
 <script>
 import { TweenMax, Power2, ScrollToPlugin } from 'gsap/all'
 import Story from '@/components/Story'
-import StoryTransition from '@/components/StoryTransition'
 import Header from '@/components/Header'
 
 // story0
 import Frame2 from '@/components/Frame2'
-import Frame3 from '@/components/Frame3'
 import Frame4 from '@/components/Frame4'
 // story1
 import Frame6 from '@/components/Frame6'
@@ -230,7 +178,6 @@ import Frame28 from '@/components/Frame28'
 // story5
 import Frame30 from '@/components/Frame30'
 import Frame31 from '@/components/Frame31'
-import Frame32 from '@/components/Frame32'
 
 import FbComment from '@/components/FbComment'
 import Footer from '@/components/Footer'
@@ -242,6 +189,7 @@ import Relate from './components/Relate.vue'
 import Share from './components/Share.vue'
 import Question from './components/Question.vue'
 
+import GoTop from './components/GoTop'
 
 // reference doc: https://greensock.com/docs/NPMUsage
 // prevent TweenMax plugin removed by tree shaking
@@ -265,11 +213,9 @@ export default {
   name: 'App',
   components: {
     Story,
-    StoryTransition,
     Header,
     // story0
     Frame2,
-    Frame3,
     Frame4,
     // story1
     Frame6,
@@ -300,7 +246,6 @@ export default {
     // Story5
     Frame30,
     Frame31,
-    Frame32,
     FbComment,
     Footer,
     ContentContainer,
@@ -309,6 +254,7 @@ export default {
     Relate,
     Share,
     Question,
+    GoTop
   },
   data () {
     return {
@@ -317,7 +263,8 @@ export default {
       focusStory: null,
       ctrl: new this.$sm.Controller(),
       observer: null,
-      height: window.innerHeight
+      height: window.innerHeight,
+      isScrolled: false
     }
   },
   computed: {
@@ -334,6 +281,7 @@ export default {
     },
     onScrollSpyJump ({ storyId }) {
       let target = this.$refs[storyId].$el
+      console.log(target)
       this.isScrollSpyJumping = true
       TweenMax.to(window, 1, {
         scrollTo: {
@@ -382,7 +330,7 @@ export default {
     },
     onClassChange () {
       this.isSlideMenuTrigger = !this.isSlideMenuTrigger
-    },
+    }
   },
   beforeDestroy () {
     window.removeEventListener('beforeunload', this.onBeforeUnload)
@@ -405,6 +353,14 @@ export default {
     ]
     stories.forEach((story) => {
       this.observer.observe(story.$el)
+    })
+
+    window.addEventListener('scroll', (event) => {
+      if (window.scrollY >= 20) {
+        this.isScrolled = true
+      } else {
+        this.isScrolled = false
+      }
     })
   }
 }

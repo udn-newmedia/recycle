@@ -55,6 +55,10 @@ export default {
     display: inline-block;
     width: 100%;
     text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 0.3s linear;
+    backface-visibility: hidden;
 
     @include rwd($RWD_DESKTOP) {
       z-index: 900;
