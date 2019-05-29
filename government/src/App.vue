@@ -2,9 +2,9 @@
   <div id="app">
     <indicator></indicator>
     <head-bar>
-      <a href="#" aria-label="民眾回收一場空">民眾回收一場空</a>
-      <a href="#" aria-label="政府燒錢有用嗎">政府燒錢有用嗎</a>
-      <a href="#" aria-label="環保不只一條路">環保不只一條路</a>
+      <a href="https://udn.com/upf/newmedia/2019_data/recycle/" aria-label="民眾回收一場空">民眾回收一場空</a>
+      <a href="#" aria-label="政府管理失能">政府管理失能</a>
+      <a href="https://udn.com/upf/newmedia/2019_data/recycle/reduction" aria-label="環保不只一條路">環保不只一條路</a>
     </head-bar>
     <cover src="static/government_cover_m.jpg" src-web="static/government_cover.jpg" position="leftTop">
       <h1 class="title">政府管理失能<br><span v-if="!isWeb">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卻拿百姓開刀</h1>
@@ -116,8 +116,8 @@
     <div class="question-btns">
       <div class="question-btn-layout">
         <div class="question-btn"><!--
-        --><a href="https://udn.com/upf/newmedia/2019_data/recycle/reduction/" class="frame-31__complain-btn" title="" target="_blank">減量好方法看這裡</a><!--
-        --><a href="https://udn.com/upf/newmedia/2019_data/recycle/" class="frame-31__complain-btn" title="" target="_blank">餐盒回收為何成為一場空？</a><!--
+        --><a @click="onQuestionBtnClick(1)" href="https://udn.com/upf/newmedia/2019_data/recycle/reduction/" class="frame-31__complain-btn" title="" target="_blank">減量好方法看這裡</a><!--
+        --><a @click="onQuestionBtnClick(2)" href="https://udn.com/upf/newmedia/2019_data/recycle/" class="frame-31__complain-btn" title="" target="_blank">餐盒回收為何成為一場空？</a><!--
       --></div>
       </div>
     </div>
@@ -224,6 +224,17 @@ export default {
       isWeb: false,
     }
   },
+
+  methods: {
+    onQuestionBtnClick (id) {
+      ga('newmedia.send', {
+        hitType: 'event',
+        eventCategory: 'button',
+        eventAction: 'click',
+        eventLabel: `page1choice${id}`
+      })
+    }
+  },
   mounted(){
     if(window.innerWidth>=768){
       this.isWeb = true;
@@ -258,6 +269,10 @@ export default {
   background-color: #30343f;
   text-align: center;
 
+  @media screen and (min-width: 760px) {
+    height: 190px;
+  }
+
   &::before {
     content: "";
     display: inline-block;
@@ -271,10 +286,15 @@ export default {
   display: inline-block;
   text-align: center;
   vertical-align: bottom;
+
+  @media screen and (min-width: 760px) {
+    padding-bottom: 15px;
+  }
 }
 
 .question-btn a {
-  display: inline-block;
+  position: relative;
+  display: block;
   margin: 0 auto;
   margin-bottom: 15px;
   width: 255px;
@@ -286,9 +306,12 @@ export default {
   text-decoration: none;
   background-color: #EBEBEB;
   border-radius: 5px;
+  cursor: pointer;
   text-align: center;
+  z-index: 999;
 
   @media screen and (min-width: 760px) {
+    display: inline-block;
     width: auto;
     margin: 0 12px;
     padding: 0 20px;
