@@ -16,7 +16,11 @@
           </div>
           <div class="frame-28__content bh-content">
             <p>未進專業處理厰的紙餐盒等紙容器，焚化爐、「自燃」外的另一條路是混入紙廠。</p>
-            <p>過去回收商將紙容器混在紙類一起混入紙廠的情形相當普遍，有紙廠私下告訴記者，在中國大陸禁廢、洋垃圾風暴前，回收商態度相當強硬，甚至嗆過紙廠「你們不收我可以賣給中國大陸」。彰化縣埔心鄉一家回收業者透露，回收業者會將紙容器混合紙類壓製成紙磚送往紙廠，若檢查過關能順利進到紙廠，「等於是中盤賺到」。</p>
+            <p>過去回收商將紙容器混在紙類一起混入紙廠的情形相當普遍，有紙廠私下告訴記者，在中國大陸禁廢、
+              <dictionary title="洋垃圾風暴">
+                <p style="padding:0;">2017年中國大陸頒布「禁廢令」，宣告2018年起不再接受包括廢紙、廢塑等24種廢棄物進口，國際廢紙價格因而大跌，國內紙廠開始收購便宜的海外廢紙，衝擊國內廢紙回收體系。</p>
+              </dictionary>
+              前，回收商態度相當強硬，甚至嗆過紙廠「你們不收我可以賣給中國大陸」。彰化縣埔心鄉一家回收業者透露，回收業者會將紙容器混合紙類壓製成紙磚送往紙廠，若檢查過關能順利進到紙廠，「等於是中盤賺到」。</p>
             <div class="frame-28__content-images">
               <img class="mobile" src="@/assets/images/story4/index_part4_article_img1_m.jpg" alt="回收場常將紙容器混在一般紙類裡偷渡進紙廠。">
               <img class="desktop" src="@/assets/images/story4/index_part4_article_img1_pc.jpg" alt="回收場常將紙容器混在一般紙類裡偷渡進紙廠。">
@@ -39,9 +43,12 @@
 <script>
 // import { TimelineMax, Linear } from 'gsap'
 // import { TimelineMax } from 'gsap'
-
+import Dictionary from '../components/Dictionary.vue'
 export default {
   name: 'Frame28',
+  components: {
+    Dictionary,
+  },
   props: {
     ctrl: {
       type: Object

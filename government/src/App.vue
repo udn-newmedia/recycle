@@ -10,7 +10,11 @@
       <h1 class="title">政府管理失能<br><span v-if="!isWeb">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卻拿百姓開刀</h1>
     </cover>
     <content-container style="background:#191410;color:white;">
-      <p>民眾若未確實做好資源回收，現規定可依法開罰1200元到6000元不等，政府拿「開罰」做為督促分類的手段，但民眾乖乖分類後，官員卻沒有擔起該負的管理責任。經本報實地調查，被公告為應回收物的餐盒、紙杯，現在回收狀況一團亂，環保署卻一問三不知，嚴重失能。</p>
+      <p>民眾若未確實做好資源回收，現規定可依法開罰1200元到6000元不等，政府拿「開罰」做為督促分類的手段，但民眾乖乖分類後，官員卻沒有擔起該負的管理責任。經本報實地調查，被公告為
+        <dictionary title="應回收物">
+          <p style="margin:0;">餐盒、紙杯等皆屬環保署公告應回收項目中「廢紙容器類」，其餘廢紙容器包括紙餐具（含免洗餐具）、鋁箔包等。</p>
+        </dictionary>
+        的餐盒、紙杯，現在回收狀況一團亂，環保署卻一問三不知，嚴重失能。</p>
       <br>
       <p>詢問每年使用量，環保署推說不知道，也不清楚有多少回收物進了焚化爐；再問若全部餐盒、紙杯都落實回收，國內只有兩家再生處理廠夠嗎？環保署僅含糊稱「應該夠」，甚至明知回收業者因貪圖方便、拒收民眾分好的餐盒，官方也未積極處理。</p>
       <br>
@@ -35,7 +39,11 @@
     <content-container style="min-height:100vh;display:flex;align-items:center;">
       <p>不清楚使用量的另一個嚴重問題，是環保署根本無法評估國內的回收處理廠夠不夠、吃不吃得下所有餐盒。目前全台僅位於苗栗的連泰紙業、正隆紙業新竹竹北廠兩地可處理紙容器再生，兩個廠現在都擔心「供不應求」，環保署卻絲毫不緊張，稱「連泰紙業擴廠後應該就夠了」。</p>
       <br>
-      <p>2018年紙容器回收量從2萬5千噸激增到4萬噸，主因雖是洋垃圾風暴衝擊下，紙廠不再讓混著紙容器的紙磚進入紙廠，但目前每月僅能處理350噸的正隆紙業擔憂，如果餐盒、餐具等紙容器回收情形持續好轉，「我們的處理廠夠嗎？」政府大力推廣民眾做回收，回收廠恐怕大塞車。</p>
+      <p>2018年紙容器回收量從2萬5千噸激增到4萬噸，主因雖是
+        <dictionary title="洋垃圾風暴">
+          <p style="margin:0;">2017年中國大陸頒布「禁廢令」，宣告2018年起不再接受包括廢紙、廢塑等24種廢棄物進口，國際廢紙價格因而大跌，國內紙廠開始收購便宜的海外廢紙，衝擊國內廢紙回收體系。</p>
+        </dictionary>
+        衝擊下，紙廠不再讓混著紙容器的紙磚進入紙廠，但目前每月僅能處理350噸的正隆紙業擔憂，如果餐盒、餐具等紙容器回收情形持續好轉，「我們的處理廠夠嗎？」政府大力推廣民眾做回收，回收廠恐怕大塞車。</p>
       <!-- <fb-comment href="https://udn.com/upf/newmedia/2019_data/DUI_victim_stories/"></fb-comment> -->
     </content-container>
     <parallaxBg src="static/government_image2_m.jpg" src-web="static/government_image2.jpg">
@@ -66,7 +74,7 @@
       <p>環保署雖明定紙容器每公斤回收商可領5.25元補助，希望藉由價格增加業者分類誘因，但並未再細分各級盤商收購價。以國內回收業體系實際運作情形來看，一層層砍下來，到中小盤商時價格已低。以新竹縣某清潔隊4月8日細分類回收價格為例，紙類1公斤2.2元、紙容器3元，兩者相差僅0.8元。</p>
       <br>
       <br>
-      <column-one src="static/government_chart_m.svg" src-web="static/government_chart.svg" href="#"></column-one>
+      <column-one src="static/government_chart_m.svg" src-web="static/government_chart.svg" href="https://udn.com/upf/newmedia/2019_data/recycle/government"></column-one>
       <br>
       <br>
       <br>
@@ -84,7 +92,7 @@
       <br>
       <p>新北一間企業員工餐廳雖設置空間讓顧客回收紙餐具，整理好後卻被清運業者打槍「不能收」，總務單位更直言「這不能賣錢，不能回收」，長期下來民眾根本搞不清楚紙餐盒要丟哪，若被清潔隊員抓到只能喊苦。</p>
       <br>
-      <column-one src="static/government_image4.jpg" src-web="static/government_image4.jpg" description="各地破袋稽查愈來愈嚴格，但許多民眾至今搞不清楚紙餐盒到底算不算回收物。" href="#"></column-one>
+      <column-one src="static/government_image4.jpg" src-web="static/government_image4.jpg" description="各地破袋稽查愈來愈嚴格，但許多民眾至今搞不清楚紙餐盒到底算不算回收物。" href="https://udn.com/upf/newmedia/2019_data/recycle/government"></column-one>
       <br>
       <p>將此亂象詢問環保署，環保署表示知情，但坦言許多回收商長期累積下來的習慣改不掉，還是將紙容器跟紙類混在一起送入紙廠，一般紙廠其實無法消化紙容器，一樣變垃圾。很多回收業者也都知道有連泰等處理廠在收，「只是不想改變既有回收模式」，回收是自由市場，環署只能盡量輔導鼓勵。</p>
       <br>
@@ -178,6 +186,7 @@
   import ParallaxBg from './components/ParallaxBg.vue'
   import Share from './components/Share.vue'
   import Youtube from './components/Youtube.vue'
+  import Dictionary from './components/Dictionary.vue'
 
   import srcRWD from "./mixin/srcRWD.js"
 
@@ -208,6 +217,7 @@ export default {
     ParallaxBg,
     Share,
     Youtube,
+    Dictionary
   },
   data() {
     return {
