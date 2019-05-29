@@ -105,6 +105,14 @@
       <p>除了加強回收管理，「減少使用」才是真正從源頭解決的方法，除了鼓勵民眾自己攜帶環保餐具，民間已蓬勃發展出許多創意減量方法，都值得政府參考。</p>
       <br>
     </content-container>
+    <div class="question-btns">
+      <div class="question-btn-layout">
+        <div class="question-btn"><!--
+        --><a href="https://udn.com/upf/newmedia/2019_data/recycle/reduction/" class="frame-31__complain-btn" title="" target="_blank">減量好方法看這裡</a><!--
+        --><a href="https://udn.com/upf/newmedia/2019_data/recycle/" class="frame-31__complain-btn" title="" target="_blank">餐盒回收為何成為一場空？</a><!--
+      --></div>
+      </div>
+    </div>
     <content-container style="background:#30343f;color:#e4e4e4;">
       <hr>
       <br>
@@ -132,7 +140,7 @@
       <br>
       <br>
       <br>
-      <relate 
+      <relate
         text1="延宕限塑、回收機制差 監院糾正環署" href1="https://udn.com/news/story/7266/3806198" img1="static/government_read1.jpg"
         text2="強化回收再利用率 環保署長：調整補貼制度" href2="https://udn.com/news/story/7314/3617009" img2="static/government_read2.jpg"
         text3="塑膠、膠膜回收 研議從原料課費" href3="https://udn.com/news/story/7266/3796119" img3="static/government_read3.jpg"
@@ -232,5 +240,48 @@ export default {
   font-size: 17px;
   color: #808080;
   background: #fff;
+}
+
+.question-btns {
+  width: 100%;
+  height: 236px;
+  background-color: #30343f;
+  text-align: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width:0 ;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.question-btn-layout {
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.question-btn a {
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 255px;
+  height: 65px;
+  line-height: 65px;
+  font-weight: bold;
+  font-size: 0.9375rem;
+  color: #000000;
+  text-decoration: none;
+  background-color: #EBEBEB;
+  border-radius: 5px;
+  text-align: center;
+
+  @media screen and (min-width: 760px) {
+    width: auto;
+    margin: 0 12px;
+    padding: 0 20px;
+  }
 }
 </style>
