@@ -5,7 +5,7 @@
 </template>
 
 <script>
-// import Utils from 'udn-newmedia-utils'
+import Utils from 'udn-newmedia-utils'
 
 export default {
   name: 'ProgressBar',
@@ -24,12 +24,14 @@ export default {
       if (Math.floor(this.progress / 10) > this.readProgress) {
         this.readProgress = Math.floor(this.progress / 10)
 
-        // window.ga("newmedia.send", {
-        //     "hitType": "event",
-        //     "eventCategory": "read",
-        //     "eventAction": "scroll",
-        //     "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [page read " + (this.readProgress * 10) + "%]"
-        //   })
+        console.log("[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [page read " + (this.readProgress * 10) + "%]")
+
+        window.ga("newmedia.send", {
+          "hitType": "event",
+          "eventCategory": "Read",
+          "eventAction": "Scroll",
+          "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [page read " + (this.readProgress * 10) + "%]"
+        })
       }
       currentH < 2 ? this.opacity = 0 : this.opacity = 1
     }

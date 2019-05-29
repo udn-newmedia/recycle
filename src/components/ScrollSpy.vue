@@ -45,6 +45,12 @@ export default {
   methods: {
     onClick (storyId) {
       this.$emit('jump', { storyId })
+      window.ga('newmedia.send', {
+        'hitType': 'event',
+        'eventCategory': 'Anchor point',
+        'eventAction': 'click',
+        'eventLabel': `point${storyId.split('story')[1]}`
+      })
     }
   }
 }
@@ -100,6 +106,7 @@ export default {
         color: #FFFFFF;
         letter-spacing: 1rem;
         writing-mode: vertical-rl;
+        cursor: pointer;
 
         &.active {
           color: #FF3737;

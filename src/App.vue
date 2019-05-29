@@ -280,7 +280,6 @@ export default {
     },
     onScrollSpyJump ({ storyId }) {
       let target = this.$refs[storyId].$el
-      console.log(target)
       this.isScrollSpyJumping = true
       TweenMax.to(window, 1, {
         scrollTo: {
@@ -294,7 +293,6 @@ export default {
       this.isScrollSpyJumping = false
     },
     onTransition ({ direction, storyId }) {
-      // console.log(direction, storyId)
       if (this.isScrollSpyJumping) {
         return
       }
