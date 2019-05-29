@@ -4,7 +4,6 @@
       :focus-story="focusStory"
       @slideMenuTrigger="onClassChange"
       @scrollSpyJump="onScrollSpyJump"
-      :onSliceMenuTrigger="onClassChange"
       :scrolled= isScrolled>
     </Header>
 
