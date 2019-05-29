@@ -74,7 +74,7 @@
       <p>環保署雖明定紙容器每公斤回收商可領5.25元補助，希望藉由價格增加業者分類誘因，但並未再細分各級盤商收購價。以國內回收業體系實際運作情形來看，一層層砍下來，到中小盤商時價格已低。以新竹縣某清潔隊4月8日細分類回收價格為例，紙類1公斤2.2元、紙容器3元，兩者相差僅0.8元。</p>
       <br>
       <br>
-      <column-one src="static/government_chart_m.svg" src-web="static/government_chart.svg" href="#"></column-one>
+      <column-one src="static/government_chart_m.svg" src-web="static/government_chart.svg" href="https://udn.com/upf/newmedia/2019_data/recycle/government"></column-one>
       <br>
       <br>
       <br>
@@ -92,7 +92,7 @@
       <br>
       <p>新北一間企業員工餐廳雖設置空間讓顧客回收紙餐具，整理好後卻被清運業者打槍「不能收」，總務單位更直言「這不能賣錢，不能回收」，長期下來民眾根本搞不清楚紙餐盒要丟哪，若被清潔隊員抓到只能喊苦。</p>
       <br>
-      <column-one src="static/government_image4.jpg" src-web="static/government_image4.jpg" description="各地破袋稽查愈來愈嚴格，但許多民眾至今搞不清楚紙餐盒到底算不算回收物。" href="#"></column-one>
+      <column-one src="static/government_image4.jpg" src-web="static/government_image4.jpg" description="各地破袋稽查愈來愈嚴格，但許多民眾至今搞不清楚紙餐盒到底算不算回收物。" href="https://udn.com/upf/newmedia/2019_data/recycle/government"></column-one>
       <br>
       <p>將此亂象詢問環保署，環保署表示知情，但坦言許多回收商長期累積下來的習慣改不掉，還是將紙容器跟紙類混在一起送入紙廠，一般紙廠其實無法消化紙容器，一樣變垃圾。很多回收業者也都知道有連泰等處理廠在收，「只是不想改變既有回收模式」，回收是自由市場，環署只能盡量輔導鼓勵。</p>
       <br>
