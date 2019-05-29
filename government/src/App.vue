@@ -111,6 +111,10 @@
       <br>
       <br>
       <br>
+      <share href="https://udn.com/upf/newmedia/2019_data/recycle/government/"></share>
+      <br>
+      <br>
+      <br>
       <editor style="color:#e4e4e4;">
         <div>採訪團隊：鄭朝陽、郭政芬、張裕珍、林敬家、張雅婷、陳斯穎、許政榆、賴香珊、范榮達、魏翊庭</div>
         <div>製作人：洪欣慈</div>
@@ -118,7 +122,7 @@
         <div>視覺設計：張心慈</div>
         <div>網頁製作：曾雅珮、謝化挺</div>
         <div>監製：林秀姿、潘如瑩、董谷音</div>
-        <div>2019.06.01</div>
+        <div>2019.06.05</div>
       </editor>
       <br>
       <logo use-ubrand="no" use-vision='no'></logo>
@@ -136,7 +140,7 @@
       </relate>
     </content-container>
     <content-container>
-      <fb-comment></fb-comment>
+      <fb-comment href="https://udn.com/upf/newmedia/2019_data/recycle/government"></fb-comment>
     </content-container>
     <foot></foot>
     <back-top></back-top>

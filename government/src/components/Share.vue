@@ -69,6 +69,7 @@ export default {
   line-height: 0;
   display: flex;
   height: 20px;
+  justify-content: center;
 }
 .fb-like-block {
   margin-right: 8px;
