@@ -8,11 +8,11 @@
         <div class="frame-30__choose-layout"><!--
           --><div class="frame-30__choose">
             <p>外食一定會用到，政府可不可以好好解決問題？</p>
-            <a href="https://udn.com/upf/newmedia/2019_data/recycle/government" class="frame-30__choose-btn" title="" target="_blank">選這個</a>
+            <a @click="click_choice1" href="https://udn.com/upf/newmedia/2019_data/recycle/government" class="frame-30__choose-btn" title="" target="_blank">選這個</a>
           </div><!--
           --><div class="frame-30__choose">
             <p>靠自己最實際，我想少用可以怎麼做？</p>
-            <a href="https://udn.com/upf/newmedia/2019_data/recycle/reduction" class="frame-30__choose-btn" title="" target="_blank">選這個</a>
+            <a @click="click_choice2" href="https://udn.com/upf/newmedia/2019_data/recycle/reduction" class="frame-30__choose-btn" title="" target="_blank">選這個</a>
           </div>
         </div>
       </div>
@@ -23,7 +23,27 @@
 <script>
 
 export default {
-  name: 'Frame30'
+  name: 'Frame30',
+  methods: {
+    //GA
+    click_choice1(){
+      ga('newmedia.send', {
+        hitType: 'event',
+        eventCategory: 'button',
+        eventAction: 'click',
+        eventLabel: `choice1`,
+      });
+    },
+    click_choice2(){
+      ga('newmedia.send', {
+        hitType: 'event',
+        eventCategory: 'button',
+        eventAction: 'click',
+        eventLabel: `choice2`,
+      });
+    },
+    //GA
+  }
 }
 </script>
 

@@ -155,7 +155,7 @@
       <br>
       <br>
       <br>
-      <share></share>
+      <share href="https://udn.com/upf/newmedia/2019_data/recycle/"></share>
       <br>
       <br>
       <br>
@@ -184,7 +184,7 @@
       </relate>
     </content-container>
     <content-container>
-      <FbComment />
+      <FbComment href="https://udn.com/upf/newmedia/2019_data/recycle/"/>
     </content-container>
     <Footer />
     <!-- <div style="height: 100vh; border: 4px solid crimson;"></div> -->
