@@ -37,8 +37,8 @@ export default {
 
         window.ga("newmedia.send", {
             "hitType": "event",
-            "eventCategory": "read",
-            "eventAction": "scroll",
+            "eventCategory": "Read",
+            "eventAction": "Scroll",
             "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [page read " + (this.readProgress * 10) + "%]"
           })
 

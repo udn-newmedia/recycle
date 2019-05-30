@@ -130,12 +130,12 @@ export default {
     },
     handle_scrollTo: _throttle(function (title, id) {
       $('html, body').animate({ scrollTop: $('#' + id).offset().top - 85 }, 1333)
-      window.ga("newmedia.send", {
-        "hitType": "event",
-        "eventCategory": "headbar",
-        "eventAction": "click",
-        "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [" + title + "] [HeadBar 內滾點擊]"
-      })
+      // window.ga("newmedia.send", {
+      //   "hitType": "event",
+      //   "eventCategory": "headbar",
+      //   "eventAction": "click",
+      //   "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [" + title + "] [HeadBar 內滾點擊]"
+      // })
     }, 1000, {leading: true, trailing: false}),
     handle_nav () {
       let currentH = window.pageYOffset
@@ -182,12 +182,12 @@ export default {
           window.pageYOffset < 2 ? this.bar_color = 'transparent' : this.bar_color = this.setProps('headColor')
         }, 444)
       }
-      window.ga("newmedia.send", {
-        "hitType": "event",
-        "eventCategory": "hamburger",
-        "eventAction": "click",
-        "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [hamburger]"
-      })
+      // window.ga("newmedia.send", {
+      //   "hitType": "event",
+      //   "eventCategory": "hamburger",
+      //   "eventAction": "click",
+      //   "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [hamburger]"
+      // })
     },
     handle_resize: _debounce(function () {
       this.isMenuOpen = false
@@ -200,9 +200,9 @@ export default {
     handle_logoGA () {
       window.ga("newmedia.send", {
         "hitType": "event",
-        "eventCategory": "hamburger",
+        "eventCategory": "",
         "eventAction": "click",
-        "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [圓形logo點擊]]"
+        "eventLabel": "page1logo2"
       })
     }
   },

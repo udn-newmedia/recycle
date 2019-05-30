@@ -2,9 +2,9 @@
   <div id="app">
     <indicator></indicator>
     <head-bar>
-      <a href="https://udn.com/upf/newmedia/2019_data/recycle/" aria-label="民眾回收一場空">民眾回收一場空</a>
+      <a href="https://udn.com/upf/newmedia/2019_data/recycle/" @click="onLinkItemClick('main')" aria-label="民眾回收一場空">民眾回收一場空</a>
       <a href="#" aria-label="政府管理失能">政府管理失能</a>
-      <a href="https://udn.com/upf/newmedia/2019_data/recycle/reduction" aria-label="環保不只一條路">環保不只一條路</a>
+      <a href="https://udn.com/upf/newmedia/2019_data/recycle/reduction" @click.prevent="onLinkItemClick('2')" aria-label="環保不只一條路">環保不只一條路</a>
     </head-bar>
     <cover src="static/government_cover_m.jpg" src-web="static/government_cover.jpg" position="leftTop">
       <h1 class="title">政府管理失能<br><span v-if="!isWeb">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卻拿百姓開刀</h1>
@@ -232,6 +232,14 @@ export default {
         eventCategory: 'button',
         eventAction: 'click',
         eventLabel: `page1choice${id}`
+      })
+    },
+    onLinkItemClick (id) {
+      window.ga("newmedia.send", {
+        "hitType": "event",
+        "eventCategory": "out link title",
+        "eventAction": "click",
+        "eventLabel": `page1to${id}`
       })
     }
   },
