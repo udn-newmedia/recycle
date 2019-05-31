@@ -139,7 +139,7 @@
         <br>
         <br>
         <br>
-        <share href="https://udn.com/upf/newmedia/2019_data/recycle/government/"></share>
+        <share href="http://nmdap.udn.com.tw/upf/newmedia/2019_data/recycle/government/"></share>
         <br>
         <br>
         <br>

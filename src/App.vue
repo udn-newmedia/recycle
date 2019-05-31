@@ -103,7 +103,7 @@
       <br>
       <br>
       <br>
-      <share href="https://udn.com/upf/newmedia/2019_data/recycle/"></share>
+      <share href="http://nmdap.udn.com.tw/upf/newmedia/2019_data/recycle/"></share>
       <br>
       <br>
       <br>
