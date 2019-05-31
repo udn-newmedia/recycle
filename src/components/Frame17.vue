@@ -2,7 +2,7 @@
   <div class="frame frame-17 summary-style over-vh">
     <div class="summary-layout">
       <div class="frame-17__summary summary">
-        <p>餐盒、紙杯等紙餐具2018年回收量共4萬噸，經記者詢問，環保署對於回收率並無掌握，但依造紙公會推估，回收率不會超過25％，連泰紙業更悲觀推估回收率僅10％，代表至少還有12萬噸紙餐具流落在外。</p>
+        <p>餐盒、紙杯等紙餐具2018年回收量共4萬噸，經記者詢問，環保署對於回收率並無掌握，但依造紙公會推估，回收率不會超過25％，連泰紙業更悲觀推估回收率僅10％，代表至少還有12萬噸、超過50億個紙餐具流落在外。</p>
         <img alt="紙容器回收量"
           src="@/assets/images/story3/index_part3_article_chart1.svg">
       </div>

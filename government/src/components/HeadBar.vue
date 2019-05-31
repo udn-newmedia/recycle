@@ -2,7 +2,7 @@
   <header class="header" :style="{ transform: 'translate3d(0,' + header_top + 'px, 0)' }" :class="{'header_open': isMenuOpen}">
     <div class="TheBar" :style="{ backgroundColor: bar_color }">
       <div class="logo_box">
-        <a href="https://ubrand.udn.com/ubrand/index" target="_blank" @click="handle_logoGA"><i class="udn-icon udn-icon-logo"></i></a>
+        <a href="https://udn.com/upf/newmedia/2019_data/recycle/" target="_blank" @click="handle_logoGA"><i class="udn-icon udn-icon-logo"></i></a>
         <!-- <a href=""><img class="other_logo" src="../../static/otherlogo.jpg" alt=""></a> -->
         <slot name="logo"></slot>
       </div>
