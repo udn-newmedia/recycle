@@ -62,9 +62,6 @@ export default {
     width: 100%;
     text-align: center;
     opacity: 0;
-    transform: translateY(30px);
-    transition: transform 0.3s linear;
-    backface-visibility: hidden;
 
     @include rwd($RWD_DESKTOP) {
       z-index: 900;
@@ -73,6 +70,9 @@ export default {
       left: 40px;
       width: auto;
       height: 100vh;
+      transform: translateY(30px);
+      transition: transform 0.3s linear;
+      backface-visibility: hidden;
 
       @include use-vertical-align();
     }
@@ -95,18 +95,21 @@ export default {
     }
 
     & .desktop {
+      position: relative;
       display: none;
       vertical-align: middle;
 
       .spy-btn {
         display: block;
         padding-right: 0;
-        padding-bottom: 30px;
         font-size: .9375rem;
         color: #FFFFFF;
         letter-spacing: 1rem;
         writing-mode: vertical-rl;
         cursor: pointer;
+        height: 15%;
+        min-height: 100px;
+        text-align: center;
 
         &.active {
           color: #FF3737;

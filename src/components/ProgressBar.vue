@@ -24,13 +24,11 @@ export default {
       if (Math.floor(this.progress / 10) > this.readProgress) {
         this.readProgress = Math.floor(this.progress / 10)
 
-        console.log("[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [page read " + (this.readProgress * 10) + "%]")
-
-        window.ga("newmedia.send", {
-          "hitType": "event",
-          "eventCategory": "Read",
-          "eventAction": "Scroll",
-          "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [page read " + (this.readProgress * 10) + "%]"
+        window.ga('newmedia.send', {
+          'hitType': 'event',
+          'eventCategory': 'Read',
+          'eventAction': 'Scroll',
+          'eventLabel': '[' + Utils.detectPlatform() + '] [' + document.querySelector('title').innerHTML + '] [page read ' + (this.readProgress * 10) + '%]'
         })
       }
       currentH < 2 ? this.opacity = 0 : this.opacity = 1
@@ -52,7 +50,14 @@ export default {
     left: 0;
     width: 100%;
     transition: opacity 0.2s ease;
-    height: 2px;
+    height: 0;
+  }
+
+  .scrolled {
+    .progress-bar {
+      height: 2px;
+      background-color: #F7F7F7;
+    }
   }
 
   .bar {

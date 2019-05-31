@@ -71,8 +71,8 @@ video {
       }
 
       @include rwd($RWD_DESKTOP_WIDE) {
-        width: 998px;
-        max-width: none;
+        width: 70%;
+        max-width: 998px;
       }
     }
 
@@ -196,7 +196,7 @@ video {
         padding: 0 160px;
 
         &+.bh-content {
-          padding: 190px 0px 270px;
+          padding: 190px 160px 270px;
         }
 
         p{
@@ -210,7 +210,7 @@ video {
         margin: 20px auto 0 auto;
         padding: 0;
 
-        &+.bg-content {
+        &+.bh-content {
           padding: 200px 0 270px 0;
         }
 
