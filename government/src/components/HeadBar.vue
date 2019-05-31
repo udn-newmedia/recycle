@@ -2,7 +2,7 @@
   <header class="header" :style="{ transform: 'translate3d(0,' + header_top + 'px, 0)' }" :class="{'header_open': isMenuOpen}">
     <div class="TheBar" :style="{ backgroundColor: bar_color }">
       <div class="logo_box">
-        <a href="https://ubrand.udn.com/ubrand/index" target="_blank" @click="handle_logoGA"><i class="udn-icon udn-icon-logo" :style="{ color: setProps('iconColor') }"></i></a>
+        <a href="https://ubrand.udn.com/ubrand/index" target="_blank" @click="handle_logoGA"><i class="udn-icon udn-icon-logo"></i></a>
         <!-- <a href=""><img class="other_logo" src="../../static/otherlogo.jpg" alt=""></a> -->
         <slot name="logo"></slot>
       </div>
@@ -17,7 +17,7 @@
     </div>
     <div class="menu_list" @click="handle_Burger()" :class="{'menu_list-show': showMenuList}">
       <div class="link_box">
-        <div class="link_item" :style="{ color: setProps('iconColor') }">
+        <div class="link_item">
           <slot></slot>
         </div>
       </div>
@@ -229,20 +229,20 @@ export default {
           })
           this.$slots.default[i].elm.addEventListener('mouseenter', function (e) {
             if (window.pageYOffset > 2) {
-              this.style.color = vm.setProps('headColor')
-              this.style.backgroundColor = vm.setProps('iconColor')
+              // this.style.color = vm.setProps('headColor')
+              // this.style.backgroundColor = vm.setProps('iconColor')
             } else {
-              this.style.color = vm.setProps('headColor')
-              this.style.backgroundColor = vm.setProps('iconColor')
+              // this.style.color = vm.setProps('headColor')
+              // this.style.backgroundColor = vm.setProps('iconColor')
             }
           })
           this.$slots.default[i].elm.addEventListener('mouseleave', function (e) {
             if (window.pageYOffset > 2) {
-              this.style.color = vm.setProps('iconColor')
-              this.style.backgroundColor = vm.setProps('headColor')
+              // this.style.color = vm.setProps('iconColor')
+              // this.style.backgroundColor = vm.setProps('headColor')
             } else {
-              this.style.color = vm.setProps('iconColor')
-              this.style.backgroundColor = 'transparent'
+              // this.style.color = vm.setProps('iconColor')
+              // this.style.backgroundColor = 'transparent'
             }
           })
         }
@@ -303,9 +303,26 @@ export default {
   width: 100%;
   height: 48px;
   transition: transform 222ms ease-out, height 444ms linear;
+
+  @media screen and (min-width: 960px) {
+    height: 55px;
+  }
 }
 .header_open{
-  height: 100vh;
+  // height: 100vh;
+  .menu_list-show {
+    transform: translateX(0);
+    transition: transform 0.2s linear;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+
+    .menu_list-show {
+      transform: none;
+      transition: none;
+    }
+  }
 }
 .TheBar{
   position: relative;
@@ -316,6 +333,10 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding-right: 48px;
+
+  @media screen and (min-width: 960px) {
+    height: 55px;
+  }
 }
 .logo_box{
   position: relative;
@@ -338,6 +359,10 @@ export default {
   &:hover{
     transform: rotate(16deg);
   }
+
+  @media screen and (min-width: 768px) {
+    color: #CFCFCF;
+  }
 }
 // 選單漢堡頁面
 .menu_box{
@@ -350,6 +375,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -412,11 +438,16 @@ export default {
   z-index: 10;
   padding-top: 48px;
   top: 0;
-  left: 0;
   right: 0;
-  bottom: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
   opacity: 1;
+  transform: translateX(100%);
+  transition: transform 0.2s linear;
   background-clip: content-box;
   background-color: #fff;
   transition: height 444ms linear;
@@ -427,10 +458,23 @@ export default {
     z-index: 51;
     background-color: transparent;
     opacity: 0;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    transform: none;
+    transition: none;
   }
 }
 .menu_list-show{
-  opacity: 1;
+  transform: translateX(100%);
+  transition: transform 0.2s linear;
+
+  @media screen and (min-width: 768px) {
+    transform: none;
+    transition: none;
+    opacity: 1;
+  }
 }
 .link_box{
   margin: 0;
@@ -442,6 +486,7 @@ export default {
     border-top: none;
     padding: 0;
     flex-direction: row;
+    text-align: right;
   }
 }
 .link_item{
@@ -451,33 +496,47 @@ export default {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  padding: 0 15px 15px 15px;
+  padding: 10px 15px 15px 15px;
   color: #000;
+  outline: 1px solid red;
+
   @media screen and (min-width: 768px) {
-    flex-direction: row;
+    display: inline-block;
+    // flex-direction: row;
+    width: 100%;
     background-color: transparent;
     padding: 0;
+    text-align: right;
   }
   a{
     flex-shrink: 0;
     position: relative;
     list-style: none;
     width: 100%;
-    height: 48px;
+    // height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 1.4;
-    color: inherit;
+    color: #ACACAC;
     transition: 222ms ease;
     border-bottom: 1px solid lightgray;
-    padding: 15px;
-    color: inherit;
+    padding: 20px 15px;
     text-decoration: none;
     @media screen and (min-width: 768px) {
+      display: inline-block;
       width: auto;
       border-bottom: none;
+      font-size: 1.125rem;
+      padding: 0 15px;
+      height: 48px;
+      line-height: 48px;
+    }
+
+    @media screen and (min-width: 960px) {
+      height: 55px;
+      line-height: 55px;
     }
   }
 }

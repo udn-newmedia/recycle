@@ -35,12 +35,12 @@ export default {
     clickToTop () {
       this.isActive = true
       $('html, body').animate({ scrollTop: 0 }, 1000)
-      window.ga("newmedia.send", {
-        "hitType": "event",
-        "eventCategory": "headbar",
-        "eventAction": "click",
-        "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [點擊回到最上面]"
-      })
+      // window.ga("newmedia.send", {
+      //   "hitType": "event",
+      //   "eventCategory": "headbar",
+      //   "eventAction": "click",
+      //   "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [點擊回到最上面]"
+      // })
     },
     handle_scroll () {
       let currentH = window.pageYOffset
