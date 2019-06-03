@@ -14,7 +14,8 @@
         <div class="story__bg-photo" :style="bgPhotoStyle"></div>
         <video class="story__bg-video" :style="bgVideoStyle" ref="video"
           :src="videoSource" v-if="video"
-          webkit-playsinline playsinline muted loop autoplay>
+          webkit-playsinline playsinline muted loop autoplay
+          :poster="poster">
         </video>
       </div>
     </div>
@@ -63,6 +64,9 @@ export default {
     isPause: {
       type: Boolean,
       default: false
+    },
+    poster: {
+      type: String
     }
   },
   data () {

@@ -9,7 +9,8 @@
       :src-large="require('../assets/media/story1/index_part1_background_video2_pc.mp4')"
       :blur="isBlur"
       :freeze="isBlur"
-      :ctrl="ctrl">
+      :ctrl="ctrl"
+      :poster="poster">
     </AutoVideo>
 
     <div class="frame-7__overlay"></div>
@@ -28,6 +29,9 @@ export default {
     ctrl: {
       type: Object
     },
+    poster: {
+      type: String
+    }
   },
   data () {
     return {

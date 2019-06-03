@@ -4,7 +4,8 @@
       ref="video"
       :style="videoStyle"
       :src="videoSource"
-      :autoplay="auto"></video>
+      :autoplay="auto"
+      :poster="poster"></video>
   </div>
 </template>
 
@@ -23,6 +24,9 @@ export default {
     ctrl: {
       type: Object
     },
+    poster: {
+      type: String
+    }
   },
   data () {
     return {
