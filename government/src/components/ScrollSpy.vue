@@ -63,16 +63,17 @@ export default {
 <style lang="scss">
   .scroll-spy {
     position: fixed;
-    left: 40px;
+    left: -40px;
     top: 0;
     display: inline-block;
-    width: 100%;
+    width: 98%;
     height: 48px;
     line-height: 48px;
     text-align: center;
     opacity: 0;
     backface-visibility: hidden;
-    z-index: 9999;
+    z-index: 910;
+    padding-left: 90px;
     // outline: 5px solid red;
 
     &.active {
@@ -86,6 +87,7 @@ export default {
       left: 40px;
       width: auto;
       height: 100vh;
+      padding-left: 0;
       transform: translateY(30px);
       transition: transform 0.3s linear, opacity 0.3s linear;
 
@@ -109,8 +111,15 @@ export default {
       left: 140px;
     }
 
-    & .mobile {
+    .mobile {
       display: block;
+
+      &:hover {
+        a {
+          color: #AEAEAE;
+          text-decoration: none;
+        }
+      }
 
       @media screen and (min-width: 520px) {
         padding-left: 20px;

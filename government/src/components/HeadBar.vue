@@ -299,7 +299,7 @@ export default {
 <style lang="scss" scoped>
 .header{
   position: fixed;
-  z-index: 9999;
+  z-index: 500;
   width: 100%;
   height: 48px;
   transition: transform 222ms ease-out, height 444ms linear;
@@ -329,7 +329,7 @@ export default {
 }
 .logo_box{
   position: relative;
-  z-index: 100;
+  // z-index: 100;
   display: flex;
   align-items: center;
   width: 100%;
@@ -348,7 +348,7 @@ export default {
   transform: rotate(0deg);
   text-decoration: none;
   cursor: pointer;
-  z-index: 52;
+  // z-index: 52;
 
   &:hover{
     transform: rotate(16deg);
@@ -361,7 +361,7 @@ export default {
 // 選單漢堡頁面
 .menu_box{
   position: absolute;
-  z-index: 999;
+  z-index: 920;
   top: 0;
   right: 0;
   width: 48px;
@@ -377,7 +377,7 @@ export default {
 .burger-icon {
   width: 46px;
   height: 46px;
-  z-index: 30;
+  // z-index: 30;
   position: relative;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
@@ -429,7 +429,7 @@ export default {
 // 選單條列
 .menu_list{
   position: absolute;
-  z-index: 10;
+  // z-index: 10;
   padding-top: 48px;
   top: 0;
   right: -100%;
@@ -449,7 +449,7 @@ export default {
   @media screen and (min-width: 768px) {
     left: auto;
     padding-top: 0;
-    z-index: 51;
+    // z-index: 51;
     background-color: transparent;
     opacity: 0;
     right: 0;
@@ -553,7 +553,7 @@ export default {
 // Scroll Nav
 .scroll_nav{
   position: absolute;
-  z-index: 0;
+  // z-index: 0;
   top: 40px;
   right: 0;
   height: 40px;
@@ -634,7 +634,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99999;
+  // z-index: 99999;
   background-color: lightgoldenrodyellow;
   font-weight: bold;
   padding: 2.5px;
