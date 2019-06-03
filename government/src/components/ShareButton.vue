@@ -81,7 +81,7 @@ export default {
       &::before {
         content: "";
         display: inline-block;
-        width: 100%;
+        width: 0;
         height: 100%;
         vertical-align: middle;
       }
@@ -96,6 +96,12 @@ export default {
       position: relative;
       font-size: 1.625rem;
       color: #E8E8E8;
+      vertical-align: middle;
+    }
+
+    img {
+      position: relative;
+      display: inline-block;
       vertical-align: middle;
     }
 

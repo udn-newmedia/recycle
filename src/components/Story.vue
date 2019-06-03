@@ -244,7 +244,6 @@ export default {
     text-align: center;
     @include use-vertical-align();
     h1.title {
-      margin-right: 22px;
       font-size: 2rem;
       // letter-spacing: 1rem;
       opacity: 0.8;
