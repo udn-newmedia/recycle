@@ -245,12 +245,16 @@ export default {
     @include use-vertical-align();
     h1.title {
       margin-right: 22px;
-      font-size: 2.25rem;
-      letter-spacing: 1rem;
+      font-size: 2rem;
+      // letter-spacing: 1rem;
       opacity: 0.8;
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 
       @include rwd($RWD_DESKTOP_WIDE) {
-        letter-spacing: 0.36px;
+        font-size: 3.75rem;
+        margin-right: 54px;
+        line-height: 5rem;
+        // letter-spacing: 0.36px;
       }
     }
 
@@ -302,24 +306,34 @@ export default {
       display: inline-block;
       margin: 55px 12px 0 0;
       vertical-align: middle;
-      font-size: 1.375rem;
-      letter-spacing: 0.875rem;
+      font-size: 2rem;
+      line-height: 2rem;
+      // letter-spacing: 0.875rem;
       line-height: 1.375rem;
       opacity: 0.8;
       writing-mode: vertical-rl;
+      white-space: nowrap;
       text-align: center;
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 
       &::after {
         content: "？";
         position: relative;
         display: inline-block;
         writing-mode: horizontal-tb;
-        width: 18px;
+        width: 26px;
         height: 40px;
+        padding-top: 10px;
       }
 
       @include rwd($RWD_DESKTOP_WIDE) {
-        letter-spacing: 0.36px;
+        font-size: 3rem;
+        // letter-spacing: 0.36px;
+
+        &::after {
+          width: 40px;
+          padding-top: 20px;
+        }
       }
     }
 

@@ -1,12 +1,10 @@
 <template>
   <div class="frame frame-31">
     <div class="frame-31__bg"></div>
-    <div class="frame-31__trigger-blackhole"
-      ref="triggerBlackhole" />
 
     <div ref="bhcontent" class="frame-31__contents blackhole-contents">
       <hr style="margin:0;">
-      <div ref="blackhole" class="frame-31__blackhole" style="width:100%;height:100vh;background:rgb(48, 52, 63);"></div>
+      <!-- <div ref="blackhole" class="frame-31__blackhole" style="width:100%;height:100vh;background:rgb(48, 52, 63);"></div> -->
 
       <div ref="content" class="frame-31__content content">
         <!-- <div class="spacer2"></div> -->
@@ -61,10 +59,11 @@ export default {
 .frame-31 {
   // z-index: 310;
   $frame: ".frame-31";
+  min-height: auto!important;
+  height: 500px;
 
-  &__trigger-blackhole {
-    position: absolute;
-    top: 50vh;
+  @include rwd($RWD_TABLET) {
+    // height: 700px;
   }
 
   &__bg {
@@ -73,22 +72,32 @@ export default {
     top: 0;
     width: 100%;
     min-height: 100%;
-    background: rgba(48, 52, 63, 0.8);
-    z-index: -1;
+    background: rgba(48, 52, 63);
   }
 
   &__contents {
+    position: relative;
+    width: 100%;
+    height: 100%;
     text-align: center;
+
   }
 
   &__blackhole {
   }
 
-  &__content {}
+  &__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 0!important;
+  }
 
   &__content-layout {
-    height: 100vh;
-    padding-bottom: 237px!important;
+    // height: 100vh;
+    position: relative;
+    height: 100%;
+    padding-bottom: 0!important;
     background-color: transparent!important;
 
     @include use-vertical-align();
@@ -102,11 +111,12 @@ export default {
   &__complain-btns {
     display: inline-block;
     vertical-align: middle;
+    padding-top: 130px;
+    // outline: 5px solid red;
 
     @include rwd($RWD_TABLET) {
-      height: 100vh;
-
-      @include use-vertical-align();
+      padding-top: 160px;
+      // @include use-vertical-align();
     }
   }
 
