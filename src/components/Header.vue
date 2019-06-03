@@ -14,7 +14,7 @@
       <div class="header-menu">
         <div class="buttons">
           <a href="https://udn.com/upf/newmedia/2019_data/recycle/" class="button" title="民眾回收一場空" target="_blank" style="font-weight:700;color:#464646;">民眾回收一場空</a>
-          <a href="https://udn.com/upf/newmedia/2019_data/recycle/government" class="button" title="政府燒錢有用嗎" target="_blank">政府燒錢有用嗎</a>
+          <a href="https://udn.com/upf/newmedia/2019_data/recycle/government" class="button" title="政府管理失能" target="_blank">政府管理失能</a>
           <a href="https://udn.com/upf/newmedia/2019_data/recycle/reduction" class="button" title="環保不只一條路" target="_blank">環保不只一條路</a>
         </div>
       </div>
@@ -25,7 +25,7 @@
     <div class="slide-menu">
       <div class="buttons">
         <a href="https://udn.com/upf/newmedia/2019_data/recycle/" class="button" title="民眾回收一場空" target="_blank" style="font-weight:700;color:#464646;">民眾回收一場空</a>
-        <a href="https://udn.com/upf/newmedia/2019_data/recycle/government" @click="onSlideMenuClick(1)" class="button" title="政府燒錢有用嗎" target="_blank">政府燒錢有用嗎</a>
+        <a href="https://udn.com/upf/newmedia/2019_data/recycle/government" @click="onSlideMenuClick(1)" class="button" title="政府管理失能" target="_blank">政府管理失能</a>
         <a href="https://udn.com/upf/newmedia/2019_data/recycle/reduction" @click="onSlideMenuClick(2)" class="button" title="環保不只一條路" target="_blank">環保不只一條路</a>
       </div>
     </div>
@@ -127,6 +127,14 @@ export default {
     .logo {
       display: inline-block;
       text-decoration: none;
+      transform: rotate(0);
+      transform-origin: center;
+      backface-visibility: none;
+      transition: transform 0.2s ease-in;
+
+      &:hover {
+        transform: rotate(16deg);
+      }
     }
 
     i {
