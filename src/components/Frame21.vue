@@ -8,7 +8,8 @@
       :src="require('../assets/media/story3/index_part3_background_video2_m.mp4')"
       :src-large="require('../assets/media/story3/index_part3_background_video2_pc.mp4')"
       :freeze="isBlur"
-      :ctrl="ctrl">
+      :ctrl="ctrl"
+      :poster="poster">
     </AutoVideo>
 
     <!-- <AutoVideo class="frame-21__video"
@@ -32,6 +33,9 @@ export default {
     ctrl: {
       type: Object
     },
+    poster: {
+      type: String
+    }
   },
   data () {
     return {

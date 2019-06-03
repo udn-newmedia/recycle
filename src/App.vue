@@ -17,7 +17,8 @@
       :video="require('@/assets/media/story0/index_cover_background_video_m.mp4')"
       :video-large="require('@/assets/media/story0/index_cover_background_video_pc.mp4')"
       :ctrl="ctrl"
-      :height="height*3">
+      :height="height*3"
+      :poster="srcRWD(require('@/assets/images/story0/index_cover_background_video_m.jpg'), require('@/assets/images/story0/index_cover_background_video_pc.jpg'))">
       <Frame2 />
       <Frame4 />
     </Story>
@@ -32,9 +33,10 @@
       :video-large="require('./assets/media/story1/index_part1_background_video1_pc.mp4')"
       :ctrl="ctrl"
       :height="height*4"
-      :isPause="true">
+      :isPause="true"
+      :poster="srcRWD(require('./assets/images/story1/index_part1_background_video1_m.jpg'), require('./assets/images/story1/index_part1_background_video1_pc.jpg'))">
       <Frame6 />
-      <Frame7 :ctrl="ctrl"/>
+      <Frame7 :ctrl="ctrl" :poster="srcRWD(require('./assets/images/story1/index_part1_background_video2_m.jpg'), require('./assets/images/story1/index_part1_background_video2_pc.jpg'))"/>
       <Frame8 />
     </Story>
 
@@ -65,9 +67,9 @@
       <Frame17 />
       <Frame175 :ctrl="ctrl"/>
       <Frame18 :ctrl="ctrl"/>
-      <Frame19 :ctrl="ctrl"/>
+      <Frame19 :ctrl="ctrl" :poster="srcRWD(require('@/assets/images/story3/index_part3_background_video1_m.jpg'), require('@/assets/images/story3/index_part3_background_video1_pc.jpg'))"/>
       <Frame20 />
-      <Frame21 :ctrl="ctrl"/>
+      <Frame21 :ctrl="ctrl" :poster="srcRWD(require('@/assets/images/story3/index_part3_background_video2_m.jpg'), require('@/assets/images/story3/index_part3_background_video2_pc.jpg'))"/>
       <Frame22 />
       <Frame23 :ctrl="ctrl"/>
       <Frame24 />
@@ -327,6 +329,13 @@ export default {
     },
     onClassChange () {
       this.isSlideMenuTrigger = !this.isSlideMenuTrigger
+    },
+    srcRWD: function (mob, pc) {
+      if (window.innerWidth > 768) {
+        return pc
+      }else {
+        return mob
+      }
     }
   },
   beforeDestroy () {
