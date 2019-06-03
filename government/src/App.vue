@@ -2,9 +2,9 @@
   <div id="app">
     <indicator></indicator>
     <head-bar head-color="#F7F7F7">
-      <a href="https://udn.com/upf/newmedia/2019_data/recycle/" @click="onLinkItemClick('main')" aria-label="民眾回收一場空">民眾回收一場空</a>
+      <a href="https://udn.com/upf/newmedia/2019_data/recycle/" style="color: #464646; font-weight:bold;" @click="onLinkItemClick('main')" aria-label="民眾回收一場空">民眾回收一場空</a>
       <a href="#" aria-label="政府燒錢有用嗎">政府燒錢有用嗎</a>
-      <a href="https://udn.com/upf/newmedia/2019_data/recycle/reduction" style="color: #464646; font-weight:bold;" @click="onLinkItemClick('2')" aria-label="環保不只一條路">環保不只一條路</a>
+      <a href="https://udn.com/upf/newmedia/2019_data/recycle/reduction" @click="onLinkItemClick('2')" aria-label="環保不只一條路">環保不只一條路</a>
     </head-bar>
     <div ref="story0" id="story0">
       <cover src="static/government_cover_m.jpg" src-web="static/government_cover.jpg" position="leftTop">
@@ -307,7 +307,6 @@ export default {
         } else {
           this.isScrollSpyShow = false
         }
-        console.log(parseInt(target.id.split('story')[1]))
       })
       this.focusStory = focusStory
     },

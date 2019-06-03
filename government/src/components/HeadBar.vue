@@ -309,19 +309,8 @@ export default {
   }
 }
 .header_open{
-  // height: 100vh;
-  .menu_list-show {
-    transform: translateX(0);
-    transition: transform 0.2s linear;
-  }
-
   @media screen and (min-width: 768px) {
     height: 100vh;
-
-    .menu_list-show {
-      transform: none;
-      transition: none;
-    }
   }
 }
 .TheBar{
@@ -345,23 +334,28 @@ export default {
   align-items: center;
   width: 100%;
   height: 100%;
+  // outline: 5px solid red;
 }
 .other_logo{
   max-width: 220px;
   max-height: 48px;
 }
 .udn-icon-logo{
+  position: relative;
   font-size: 36px;
-  color: #000;
+  color: #CFCFCF;
   transition: transform 288ms ease-in;
   transform: rotate(0deg);
   text-decoration: none;
+  cursor: pointer;
+  z-index: 52;
+
   &:hover{
     transform: rotate(16deg);
   }
 
   @media screen and (min-width: 768px) {
-    color: #CFCFCF;
+    color: #000;
   }
 }
 // 選單漢堡頁面
@@ -438,7 +432,7 @@ export default {
   z-index: 10;
   padding-top: 48px;
   top: 0;
-  right: 0;
+  right: -100%;
   // left: 0;
   // right: 0;
   // bottom: 0;
@@ -446,7 +440,7 @@ export default {
   height: 100vh;
   overflow: hidden;
   opacity: 1;
-  transform: translateX(100%);
+  // transform: translateX(-100%);
   transition: transform 0.2s linear;
   background-clip: content-box;
   background-color: #fff;
@@ -458,7 +452,7 @@ export default {
     z-index: 51;
     background-color: transparent;
     opacity: 0;
-    left: 0;
+    right: 0;
     bottom: 0;
     width: auto;
     height: auto;
@@ -467,7 +461,7 @@ export default {
   }
 }
 .menu_list-show{
-  transform: translateX(100%);
+  transform: translateX(0);
   transition: transform 0.2s linear;
 
   @media screen and (min-width: 768px) {
@@ -476,6 +470,23 @@ export default {
     opacity: 1;
   }
 }
+
+.header_open{
+  // height: 100vh;
+  .menu_list-show {
+    transform: translateX(-100%);
+    transition: transform 0.2s linear;
+  }
+
+  @media screen and (min-width: 768px) {
+    .menu_list-show {
+      right: 0;
+      transform: none;
+      transition: none;
+    }
+  }
+}
+
 .link_box{
   margin: 0;
   width: 100%;
@@ -498,7 +509,6 @@ export default {
   background-color: #fff;
   padding: 10px 15px 15px 15px;
   color: #000;
-  outline: 1px solid red;
 
   @media screen and (min-width: 768px) {
     display: inline-block;
