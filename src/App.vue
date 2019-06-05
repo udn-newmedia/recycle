@@ -20,7 +20,7 @@
       :height="height*3"
       :poster="srcRWD(require('@/assets/images/story0/index_cover_background_video_m.jpg'), require('@/assets/images/story0/index_cover_background_video_pc.jpg'))">
       <Frame2 />
-      <Frame4 />
+      <!-- <Frame4 /> -->
     </Story>
 
     <Story
@@ -105,7 +105,7 @@
       <br>
       <br>
       <br>
-      <share href="http://nmdap.udn.com.tw/upf/newmedia/2019_data/recycle/"></share>
+      <share href="http://udn.com/upf/newmedia/2019_data/recycle/"></share>
       <br>
       <br>
       <br>
@@ -150,7 +150,7 @@ import Header from '@/components/Header'
 
 // story0
 import Frame2 from '@/components/Frame2'
-import Frame4 from '@/components/Frame4'
+// import Frame4 from '@/components/Frame4'
 // story1
 import Frame6 from '@/components/Frame6'
 import Frame7 from '@/components/Frame7'
@@ -217,7 +217,7 @@ export default {
     Header,
     // story0
     Frame2,
-    Frame4,
+    // Frame4,
     // story1
     Frame6,
     Frame7,
@@ -317,6 +317,7 @@ export default {
     onStoryIntersection (entries) {
       let maxStoryRatio = 0
       let focusStory = null
+      // console.log(entries.map(entry => entry.target.id))
       entries.forEach((entry) => {
         let { target, intersectionRatio } = entry
         let ratio = Math.round(intersectionRatio * 1000) / 100
@@ -333,8 +334,16 @@ export default {
     srcRWD: function (mob, pc) {
       if (window.innerWidth > 768) {
         return pc
-      }else {
+      } else {
         return mob
+      }
+    },
+    onHeaderShow (pos) {
+      // console.log(pos)
+      if (pos >= 40) {
+        this.isScrolled = true
+      } else {
+        this.isScrolled = false
       }
     }
   },
@@ -361,13 +370,23 @@ export default {
       this.observer.observe(story.$el)
     })
 
+    this.onHeaderShow(window.pageYOffset)
+
     window.addEventListener('scroll', (event) => {
-      if (window.scrollY >= 20) {
-        this.isScrolled = true
-      } else {
-        this.isScrolled = false
-      }
+      this.onHeaderShow(window.pageYOffset)
     })
+
+    window.addEventListener('touchend', (event) => {
+      this.onHeaderShow(window.pageYOffset)
+    })
+
+    window.addEventListener('touchmove', (event) => {
+      event.preventDefault()
+    })
+
+    document.ontouchmove = function(event){
+        event.preventDefault();
+    }
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="share-block">
-    <div class="fb-like-block" @click="shareToFb">
+    <div class="fb-like-block" @click.prevent.stop="shareToFb">
       <div class="fb-like" :data-href="setProps('href')" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
     </div>
     <div class="line-block" @click="shareToLine">
@@ -29,9 +29,9 @@ export default {
     shareToFb() {
       ga('newmedia.send', {
         hitType: 'event',
-        eventCategory: 'FB Share',
+        eventCategory: 'Share',
         eventAction: 'click',
-        eventLabel: `[${detectPlatform()}] [${document.querySelector('title').innerHTML}] [fb share]`,
+        eventLabel: 'Click_page1FBbottom'
       });
     },
     shareToLine() {
@@ -43,9 +43,9 @@ export default {
       }
       ga('newmedia.send', {
         hitType: 'event',
-        eventCategory: 'Line Share',
+        eventCategory: 'Share',
         eventAction: 'click',
-        eventLabel: `[${detectPlatform()}] [${document.querySelector('title').innerHTML}] [line share]`,
+        eventLabel: 'Click_page1Linebottom'
       });
     },
   },
