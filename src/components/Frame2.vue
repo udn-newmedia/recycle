@@ -10,13 +10,15 @@
     <div class="frame-2__social"><!--
     --><a class="frame-2__share-facebook" title="FB分享" @click.prevent.stop="onShareFacebook"><!--
       --><i class="fab fa-facebook-f" /></a><!--
-    --><a class="frame-2__share-line" title="LINE分享" target="_blank" :href="lineSharedUrl"><!--
+    --><a class="frame-2__share-line" title="LINE分享" target="_blank" :href="lineSharedUrl" @click="onLineShare"><!--
       --><img src="@/assets/images/share-line.png" alt="LINE分享" /></a>
     </div>
   </div>
 </template>
 
 <script>
+import { detectPlatform } from 'udn-newmedia-utils'
+
 export default {
   name: 'Frame2',
   data () {
@@ -50,6 +52,21 @@ export default {
         href: this.sharedUrl
       }
       window.FB && window.FB.ui(fbShareConfig)
+
+      window.ga('newmedia.send', {
+        hitType: 'event',
+        eventCategory: 'Share',
+        eventAction: 'click',
+        eventLabel: 'Click_FBtop'
+      })
+    },
+    onLineShare () {
+      window.ga('newmedia.send', {
+        hitType: 'event',
+        eventCategory: 'Share',
+        eventAction: 'click',
+        eventLabel: 'Click_Linetop'
+      })
     }
   }
 }
@@ -84,8 +101,13 @@ export default {
       margin-bottom: 20px;
     }
 
+    @include rwd($RWD_DESKTOP) {
+      padding: 0 100px;
+    }
+
     @include rwd($RWD_DESKTOP_WIDE) {
       max-width: 812px;
+      padding: 0;
       line-height: 1.9375rem;
 
       p{

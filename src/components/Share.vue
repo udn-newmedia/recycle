@@ -1,6 +1,6 @@
 <template>
   <div class="share-block">
-    <div class="fb-like-block" @click="shareToFb">
+    <div class="fb-like-block" @click.prevent.stop="shareToFb">
       <div class="fb-like" :data-href="setProps('href')" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
     </div>
     <div class="line-block" @click="shareToLine">
@@ -31,9 +31,9 @@ export default {
     shareToFb () {
       ga('newmedia.send', {
         hitType: 'event',
-        eventCategory: 'FB Share',
+        eventCategory: 'Share',
         eventAction: 'click',
-        eventLabel: `[${detectPlatform()}] [${document.querySelector('title').innerHTML}] [fb share]`
+        eventLabel: 'Click_FBbottom'
       })
     },
     shareToLine () {
@@ -46,9 +46,9 @@ export default {
 
       ga('newmedia.send', {
         hitType: 'event',
-        eventCategory: 'Line Share',
+        eventCategory: 'Share',
         eventAction: 'click',
-        eventLabel: `[${detectPlatform()}] [${document.querySelector('title').innerHTML}] [line share]`
+        eventLabel: 'Click_Linebottom'
       })
     }
   },
@@ -61,9 +61,9 @@ export default {
       js.src = '//connect.facebook.net/zh_TW/sdk.js?t-1#xfbml=1&version=v2.7&appId=1010324812347164'
       fjs.parentNode.insertBefore(js, fjs)
     }(document, 'script', 'facebook-jssdk'))
-    // if (this.$props.href === undefined && this.$props.jsonProps === null) {
-    //   console.error('請輸入 href ex: <share href="{Url}"></share>');
-    // }
+    if (this.$props.href === undefined && this.$props.jsonProps === null) {
+      console.error('請輸入 href ex: <share href="{Url}"></share>')
+    }
   }
 }
 </script>
