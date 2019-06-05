@@ -127,6 +127,7 @@ export default {
       if (this.anchorMenu.length > 0) {
         this.handle_nav()
       }
+
     },
     handle_scrollTo: _throttle(function (title, id) {
       $('html, body').animate({ scrollTop: $('#' + id).offset().top - 85 }, 1333)
@@ -176,8 +177,10 @@ export default {
       if (this.isMenuOpen === false) {
         this.isMenuOpen = true
         this.bar_color = this.setProps('headColor')
+        this.showMenuList = true
       } else {
         this.isMenuOpen = false
+        this.showMenuList = false
         setTimeout(() => {
           window.pageYOffset < 2 ? this.bar_color = 'transparent' : this.bar_color = this.setProps('headColor')
         }, 444)
@@ -342,13 +345,13 @@ export default {
 }
 .udn-icon-logo{
   position: relative;
-  font-size: 36px;
+  font-size: 32px;
   color: #CFCFCF;
   transition: transform 288ms ease-in;
   transform: rotate(0deg);
   text-decoration: none;
   cursor: pointer;
-  // z-index: 52;
+  z-index: 912;
 
   &:hover{
     transform: rotate(16deg);
@@ -429,7 +432,7 @@ export default {
 // 選單條列
 .menu_list{
   position: absolute;
-  // z-index: 10;
+  z-index: 100;
   padding-top: 48px;
   top: 0;
   right: -100%;

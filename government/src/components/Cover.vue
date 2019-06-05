@@ -28,7 +28,7 @@ export default {
     },
     hintColor: {
       type: String,
-      default: '#333333'      
+      default: '#333333'
     },
     jsonProps: {
       type: Object,
@@ -77,7 +77,7 @@ export default {
   },
   mounted () {
     window.addEventListener('resize', this.handle_resize)
-  }  
+  }
 }
 </script>
 
@@ -94,7 +94,7 @@ export default {
   background-position: center center;
   background-color: #fff;
   @media (min-width: 768px) and (max-width: 1023px) {
-    padding: 40% 20% 0;
+    padding: 30% 20% 0;
   }
   @media screen and (min-width: 1024px) {
     padding: 40% 20% 0;
