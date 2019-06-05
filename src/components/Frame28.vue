@@ -8,7 +8,6 @@
       <div ref="blackhole" class="frame-28__blackhole blackhole"></div>
 
       <div ref="content" class="frame-28__content content">
-        <div class="spacer2"></div>
         <div class="frame28__content-layout bh-content-layout">
           <div class="frame-28__blackhole-title bh-title">
             <p>黑洞三：</p>
@@ -47,7 +46,7 @@ import Dictionary from '../components/Dictionary.vue'
 export default {
   name: 'Frame28',
   components: {
-    Dictionary,
+    Dictionary
   },
   props: {
     ctrl: {

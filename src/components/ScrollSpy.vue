@@ -59,9 +59,15 @@ export default {
 <style lang="scss">
   .scroll-spy {
     display: inline-block;
-    width: 100%;
+    width: 80%;
+    max-width: 230px;
     text-align: center;
     opacity: 0;
+
+    @include rwd($RWD_TABLET_SMALL) {
+      width: 100%;
+      max-width: none;
+    }
 
     @include rwd($RWD_DESKTOP) {
       z-index: 900;

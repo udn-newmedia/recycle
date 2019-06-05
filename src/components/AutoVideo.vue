@@ -91,16 +91,16 @@ export default {
     new this.$sm.Scene({
       triggerElement: this.$el,
       duration: '0',
-      triggerHook:'onLeave',
+      triggerHook: 'onLeave'
     })
-    .addTo(this.ctrl)
-    .on('enter', ()=>{
-      this.pause()
-    })
-    .on('leave', ()=>{
-      this.play()
-    })
-    // .addIndicators({ name: 'auto-video' })
+      .addTo(this.ctrl)
+      .on('enter', () => {
+        this.pause()
+      })
+      .on('leave', () => {
+        this.play()
+      })
+      // .addIndicators({ name: 'auto-video' })
   }
 }
 </script>

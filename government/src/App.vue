@@ -2,13 +2,13 @@
   <div id="app">
     <indicator></indicator>
     <head-bar head-color="#F7F7F7">
-      <a href="https://udn.com/upf/newmedia/2019_data/recycle/" style="color: #464646; font-weight:bold;" @click="onLinkItemClick('main')" aria-label="民眾回收一場空">民眾回收一場空</a>
-      <a href="#" aria-label="政府管理失能">政府管理失能</a>
+      <a href="https://udn.com/upf/newmedia/2019_data/recycle/" @click="onLinkItemClick('main')" aria-label="民眾回收一場空">民眾回收一場空</a>
+      <a href="#" aria-label="政府管理失能"  style="color: #464646; font-weight:bold;">政府管理失能</a>
       <a href="https://udn.com/upf/newmedia/2019_data/recycle/reduction" @click="onLinkItemClick('2')" aria-label="環保不只一條路">環保不只一條路</a>
     </head-bar>
     <div ref="story0" id="story0">
       <cover src="static/government_cover_m.jpg" src-web="static/government_cover.jpg" position="leftTop">
-        <h1 class="title">政府管理失能<br><span v-if="!isWeb">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卻拿百姓開刀</h1>
+        <h1 class="title">政府管理失能<br><span v-if="!isWeb">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 後果百姓承擔<span>？</span></h1>
       </cover>
       <content-container style="background:#191410;color:white;">
         <p>民眾若未確實做好資源回收，現規定可依法開罰1200元到6000元不等，政府拿「開罰」做為督促分類的手段，但民眾乖乖分類後，官員卻沒有擔起該負的管理責任。經本報實地調查，被公告為
@@ -66,7 +66,7 @@
       </content-container>
     </div>
     <div ref="story2" id="story2">
-      <content-container style="display:flex;align-items:center;">
+      <content-container style="display:flex;align-items:center;padding-top: 0;">
         <h3>問題二：<br>數字一團亂 補貼制度失能</h3>
         <br>
         <p>源頭數字混亂，讓後端回收補貼費率也一團亂。國內回收體系價格調節，都仰賴環保署資源回收基金管理會（簡稱回收基管會），基管會向生產商收取回收基金，再設定費率補貼回收業者及處理廠，但走訪第一線回收場，環保署對紙容器的補貼沒有發揮作用，許多回收場還是不想好好做。</p>
@@ -142,7 +142,7 @@
         <br>
         <br>
         <br>
-        <share href="http://nmdap.udn.com.tw/upf/newmedia/2019_data/recycle/government/"></share>
+        <share href="http://udn.com/upf/newmedia/2019_data/recycle/government/"></share>
         <br>
         <br>
         <br>
@@ -335,11 +335,10 @@ export default {
     stories.forEach((story) => {
       this.observer.observe(story)
     })
-    // if (this.observer.length > 0) {
-    //   this.isScrollSpyShow = true
-    // } else {
-    //   this.isScrollSpyShow = false
-    // }
+
+    document.ontouchmove = function(event){
+        event.preventDefault();
+    }
   }
 }
 </script>
@@ -351,6 +350,7 @@ export default {
   font-weight: bold;
   line-height: 1.3;
   letter-spacing: 4px;
+  white-space: nowrap;
 }
 .image_description{
   margin: 0;
@@ -407,13 +407,25 @@ export default {
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
-  z-index: 999;
 
   @media screen and (min-width: 760px) {
     display: inline-block;
     width: auto;
     margin: 0 12px;
     padding: 0 20px;
+  }
+}
+
+h1 span {
+  position: relative;
+  // outline: 1px solid red;
+  text-align: center;
+  writing-mode: horizontal-tb;
+  letter-spacing: 0;
+  margin-left: 2px;
+
+  @media screen and (min-width: 760px) {
+    margin-left: 6px;
   }
 }
 </style>

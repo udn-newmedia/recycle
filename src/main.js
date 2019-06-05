@@ -3,6 +3,7 @@ import 'normalize.css'
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@/assets/styles/UdnFontSize.css'
 // runtime detector
+import 'intersection-observer'
 import MobileDetect from 'mobile-detect'
 import DetectInApp from 'detect-inapp'
 // scrollmagic & gsap
@@ -13,6 +14,8 @@ import 'debug.addIndicators'
 import Vue from 'vue'
 import VueMq from 'vue-mq'
 import App from './App.vue'
+
+IntersectionObserver.prototype.POLL_INTERVAL = 10
 
 Vue.config.productionTip = false
 

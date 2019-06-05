@@ -8,11 +8,12 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10",
-    "vuex": "^3.1.0",
-    "udn-newmedia-utils": "^1.0.9",
+    "intersection-observer": "^0.7.0",
     "lodash.debounce": "^4.0.8",
-    "lodash.throttle": "^4.1.1"
+    "lodash.throttle": "^4.1.1",
+    "udn-newmedia-utils": "^1.0.9",
+    "vue": "^2.6.10",
+    "vuex": "^3.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.7.0",

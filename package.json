@@ -12,6 +12,7 @@
     "core-js": "^2.6.5",
     "detect-inapp": "^1.4.0",
     "gsap": "^2.1.2",
+    "intersection-observer": "^0.7.0",
     "mobile-detect": "^1.4.3",
     "normalize.css": "^8.0.1",
     "scrollmagic": "^2.0.6",

@@ -43,14 +43,14 @@ export default {
     }
   },
   mounted () {
-    let height =  window.innerHeight
+    let height = window.innerHeight
     new this.$sm.Scene({
       triggerElement: this.$refs.triggerSticky,
-      duration: height*3,
-      triggerHook:'onLeave',
+      duration: height * 3,
+      triggerHook: 'onLeave'
     })
-    .addTo(this.ctrl)
-    .setPin(this.$refs.video.$el)
+      .addTo(this.ctrl)
+      .setPin(this.$refs.video.$el)
     // .on('enter leave', (event) => {
     //   switch (event.type) {
     //     case 'enter':

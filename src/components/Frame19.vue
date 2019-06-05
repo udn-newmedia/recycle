@@ -43,14 +43,14 @@ export default {
     }
   },
   mounted () {
-    let height =  window.innerHeight
+    let height = window.innerHeight
     new this.$sm.Scene({
       triggerElement: this.$refs.triggerSticky,
-      duration: height*5,
-      triggerHook:'onLeave',
+      duration: height * 5,
+      triggerHook: 'onLeave'
     })
-    .addTo(this.ctrl)
-    .setPin(this.$refs.video.$el)
+      .addTo(this.ctrl)
+      .setPin(this.$refs.video.$el)
     // .on('enter leave', (event) => {
     //   switch (event.type) {
     //     case 'enter':
@@ -68,7 +68,7 @@ export default {
 <style lang="scss">
 .frame-19 {
   // z-index: 190;
-  $frame: ".frame-18";
+  $frame: ".frame-19";
   width: 100%;
   height: 100vh;
   overflow: hidden;

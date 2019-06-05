@@ -7,7 +7,6 @@
       <div ref="spacer" class="spacer"></div>
       <div ref="blackhole" class="frame-13__blackhole blackhole"></div>
       <div ref="content" class="frame-13__content content">
-        <div ref="spacer2" class="spacer2"></div>
         <div class="frame-13__content-layout bh-content-layout">
           <div class="frame-13__blackhole-title bh-title">
             <p>黑洞一：</p>
