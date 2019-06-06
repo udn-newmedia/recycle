@@ -21,16 +21,16 @@
               </dictionary>
               前，回收商態度相當強硬，甚至嗆過紙廠「你們不收我可以賣給中國大陸」。彰化縣埔心鄉一家回收業者透露，回收業者會將紙容器混合紙類壓製成紙磚送往紙廠，若檢查過關能順利進到紙廠，「等於是中盤賺到」。</p>
             <div class="frame-28__content-images">
-              <img class="mobile" src="@/assets/images/story4/index_part4_article_img1_m.jpg" alt="回收場常將紙容器混在一般紙類裡偷渡進紙廠。">
-              <img class="desktop" src="@/assets/images/story4/index_part4_article_img1_pc.jpg" alt="回收場常將紙容器混在一般紙類裡偷渡進紙廠。">
+              <img class="mobile" :src="srcRWD(require('@/assets/images/story4/index_part4_article_img1_m.jpg'), require('@/assets/images/story4/index_part4_article_img1_pc.jpg'))" alt="回收場常將紙容器混在一般紙類裡偷渡進紙廠。">
+              <img class="desktop" :src="srcRWD(require('@/assets/images/story4/index_part4_article_img1_m.jpg'), require('@/assets/images/story4/index_part4_article_img1_pc.jpg'))" alt="回收場常將紙容器混在一般紙類裡偷渡進紙廠。">
             </div>
           </div>
           <div class="frame-28__content bh-content">
             <p>但對紙廠而言，<b>紙容器混入紙廠的命運一樣是變垃圾</b>。正隆紙業竹北廠廠長蔡石玉指出，一般廢紙倒進紙廠的散漿機後，只需幾秒就可打散，「紙容器根本打不散」，紙廠也只能當成垃圾處理。</p>
             <p>造紙公會統計，紙容器混雜最嚴重時紙廠排渣率平均高達12％，等同每100公斤的紙磚就有12公斤是廢料。洋垃圾風暴後，紙廠對入廠的紙磚純度要求變嚴格，回收商怕被紙廠「打槍」分類較認真，狀況略好轉，排渣率降到4％到5％。</p>
             <div class="frame-28__content-images">
-              <img class="mobile" src="@/assets/images/story4/index_part4_article_img2_m.jpg" alt="一般紙廠無法打散帶有塑膠膜的紙餐盒。">
-              <img class="desktop" src="@/assets/images/story4/index_part4_article_img2_pc.jpg" alt="一般紙廠無法打散帶有塑膠膜的紙餐盒。">
+              <img class="mobile" :src="srcRWD(require('@/assets/images/story4/index_part4_article_img2_m.jpg'), require('@/assets/images/story4/index_part4_article_img2_pc.jpg'))" alt="一般紙廠無法打散帶有塑膠膜的紙餐盒。">
+              <img class="desktop" :src="srcRWD(require('@/assets/images/story4/index_part4_article_img2_m.jpg'), require('@/assets/images/story4/index_part4_article_img2_pc.jpg'))" alt="一般紙廠無法打散帶有塑膠膜的紙餐盒。">
             </div>
           </div>
         </div>
@@ -56,6 +56,15 @@ export default {
   data () {
     return {
     }
+  },
+  methods: {
+    srcRWD: function (mob, pc) {
+      if (window.innerWidth > 768) {
+        return pc
+      } else {
+        return mob
+      }
+    },
   },
   mounted () {
     // new this.$sm.Scene({

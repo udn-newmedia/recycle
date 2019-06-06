@@ -2,8 +2,7 @@
   <div class="auto-video">
     <video webkit-playsinline playsinline muted loop
       ref="video"
-      :style="videoStyle"
-      :src="videoSource"
+      :src="src"
       :autoplay="auto"
       :poster="poster"></video>
   </div>
@@ -17,7 +16,7 @@ export default {
   name: 'AutoVideo',
   props: {
     src: String,
-    srcLarge: String,
+    // srcLarge: String,
     auto: { type: Boolean, default: true },
     blur: { type: Boolean, default: false },
     freeze: { type: Boolean, default: false },
@@ -33,13 +32,13 @@ export default {
     }
   },
   computed: {
-    videoStyle () {
-      let blurValue = !this.blur ? 0 : BLUR_DEFAULT
-      return {
-        '-webkit-filter': `blur(${blurValue}px)`,
-        'filter': `blur(${blurValue}px)`
-      }
-    },
+    // videoStyle () {
+    //   let blurValue = !this.blur ? 0 : BLUR_DEFAULT
+    //   return {
+    //     '-webkit-filter': `blur(${blurValue}px)`,
+    //     'filter': `blur(${blurValue}px)`
+    //   }
+    // },
     videoSource () {
       return !this.useLargeAssets ? this.src : this.srcLarge
     },

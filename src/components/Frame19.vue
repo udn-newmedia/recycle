@@ -5,8 +5,7 @@
 
     <AutoVideo class="frame-19__video"
       ref="video"
-      :src="require('../assets/media/story3/index_part3_background_video1_m.mp4')"
-      :src-large="require('../assets/media/story3/index_part3_background_video1_pc.mp4')"
+      :src="srcRWD(require('../assets/media/story3/index_part3_background_video1_m.mp4'), require('../assets/media/story3/index_part3_background_video1_pc.mp4'))"
       :freeze="isBlur"
       :ctrl="ctrl"
       :poster="poster">
@@ -40,6 +39,15 @@ export default {
   data () {
     return {
       isBlur: false
+    }
+  },
+  methods: {
+    srcRWD: function (mob, pc) {
+      if (window.innerWidth > 768) {
+        return pc
+      } else {
+        return mob
+      }
     }
   },
   mounted () {

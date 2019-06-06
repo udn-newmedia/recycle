@@ -5,9 +5,9 @@
         <p>造紙工業同業公會秘書長謝世平表示，國內一般廢紙平均收購價現約一公斤4.5元，跟紙容器的5.25元僅差0.75元，差距不夠大，應至少差2元，回收商才有誘因。</p>
 
         <img alt="環保署紙容器補貼機制"
-          src="@/assets/images/story3/index_part3_article_chart2_m.svg">
+          :src="srcRWD(require('@/assets/images/story3/index_part3_article_chart2_m.svg'), require('@/assets/images/story3/index_part3_article_chart2_pc.svg'))">
         <img alt="環保署紙容器補貼機制"
-          src="@/assets/images/story3/index_part3_article_chart2_pc.svg">
+          :src="srcRWD(require('@/assets/images/story3/index_part3_article_chart2_m.svg'), require('@/assets/images/story3/index_part3_article_chart2_pc.svg'))">
       </div><!--
     --></div>
   </div>
@@ -16,7 +16,16 @@
 <script>
 
 export default {
-  name: 'Frame22'
+  name: 'Frame22',
+  methods: {
+    srcRWD: function (mob, pc) {
+      if (window.innerWidth > 768) {
+        return pc
+      } else {
+        return mob
+      }
+    },
+  }
 }
 </script>
 

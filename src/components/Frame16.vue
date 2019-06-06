@@ -4,9 +4,9 @@
       <div class="frame-16__summary summary">
         <p>清運、回收業者不想收，一大原因是紙容器的專業處理廠過少，運送、囤積都會有問題，且價格不高、誘因不足。目前全台僅有兩家可將紙容器再生的處理廠，一家是位於苗栗的連泰紙業，另一家是位於新竹縣的正隆紙業竹北廠，唯有這兩家可將紙容器回收再利用成塑膠粒、紙漿，兩家距離僅30公里，地理區域相近，對桃竹苗、台中以外的縣市而言都是「遠送」。</p>
         <img alt="全台灣現只有苗栗連泰紙業和正隆紙業竹北廠可將紙容器回收再利用。"
-          src="@/assets/images/story3/index_part3_article_map_m.svg">
+          :src="srcRWD(require('@/assets/images/story3/index_part3_article_map_m.svg'), require('@/assets/images/story3/index_part3_article_map_pc.svg'))">
         <img alt="全台灣現只有苗栗連泰紙業和正隆紙業竹北廠可將紙容器回收再利用。"
-          src="@/assets/images/story3/index_part3_article_map_pc.svg">
+          :src="srcRWD(require('@/assets/images/story3/index_part3_article_map_m.svg'), require('@/assets/images/story3/index_part3_article_map_pc.svg'))">
       </div>
     </div>
   </div>
@@ -15,7 +15,16 @@
 <script>
 
 export default {
-  name: 'Frame16'
+  name: 'Frame16',
+  methods: {
+    srcRWD: function (mob, pc) {
+      if (window.innerWidth > 768) {
+        return pc
+      } else {
+        return mob
+      }
+    },
+  }
 }
 </script>
 

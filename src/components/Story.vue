@@ -10,10 +10,10 @@
       ref="triggerTopic" />
 
     <div class="story__bg" style="overflow:hidden;">
-      <div class="story__bg-wrapper" :style="bgWrapperStyle" ref="bg">
+      <div class="story__bg-wrapper" ref="bg">
         <div class="story__bg-photo" :style="bgPhotoStyle"></div>
         <video class="story__bg-video" :style="bgVideoStyle" ref="video"
-          :src="videoSource" v-if="video"
+          :src="video" v-if="video"
           webkit-playsinline playsinline muted loop autoplay
           :poster="poster">
         </video>
@@ -51,9 +51,9 @@ export default {
     subtitle: String,
     endingTitle: String,
     photo: String,
-    photoLarge: String,
+    // photoLarge: String,
     video: String,
-    videoLarge: String,
+    // videoLarge: String,
     ctrl: {
       type: Object
     },
@@ -81,14 +81,15 @@ export default {
         'z-index': layer
       }
     },
-    bgWrapperStyle () {
-      return {
-        '-webkit-filter': `blur(${this.bgBlur}px)`,
-        'filter': `blur(${this.bgBlur}px)`
-      }
-    },
+    // bgWrapperStyle () {
+    //   return {
+    //     '-webkit-filter': `blur(${this.bgBlur}px)`,
+    //     'filter': `blur(${this.bgBlur}px)`
+    //   }
+    // },
     bgPhotoStyle () {
-      let photo = !this.useLargeAssets ? this.photo : this.photoLarge
+      // let photo = !this.useLargeAssets ? this.photo : this.photoLarge
+      let photo = this.photo
       return {
         'background-image': `url(${photo})`
       }
@@ -96,13 +97,13 @@ export default {
     bgVideoStyle () {
       return {}
     },
-    videoSource () {
-      return !this.useLargeAssets ? this.video : this.videoLarge
-    },
-    useLargeAssets () {
-      let mq = this.$mq
-      return mq === 'tablet' || mq === 'desktop' || mq === 'desktopWide'
-    }
+    // videoSource () {
+    //   return !this.useLargeAssets ? this.video : this.videoLarge
+    // },
+    // useLargeAssets () {
+    //   let mq = this.$mq
+    //   return mq === 'tablet' || mq === 'desktop' || mq === 'desktopWide'
+    // }
   },
   methods: {
     play () {
@@ -123,16 +124,16 @@ export default {
   mounted () {
     // bg blur
     let vm = this
-    new this.$sm.Scene({
-      triggerElement: this.$refs.triggerUnblur,
-      duration: '100%',
-      triggerHook:'onLeave',
-    })
-    .addTo(this.ctrl)
-    .on('progress', (event) => {
-      let progress = event.progress.toFixed(2)
-      this.bgBlur = Math.floor((1 - progress) * BLUR_DEFAULT)
-    })
+    // new this.$sm.Scene({
+    //   triggerElement: this.$refs.triggerUnblur,
+    //   duration: '100%',
+    //   triggerHook:'onLeave',
+    // })
+    // .addTo(this.ctrl)
+    // .on('progress', (event) => {
+    //   let progress = event.progress.toFixed(2)
+    //   this.bgBlur = Math.floor((1 - progress) * BLUR_DEFAULT)
+    // })
     // .addIndicators({ name: 'bg-blur' })
 
     // sticky
@@ -220,7 +221,7 @@ export default {
     height: 100vh;
     overflow: hidden;
     transform: scale(1.1);
-    @include use-filter-blur(8);
+    // @include use-filter-blur(8);
   }
 
   &__bg-photo {

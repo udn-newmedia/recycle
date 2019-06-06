@@ -12,10 +12,8 @@
       :id="0"
       title="消失的紙餐盒"
       subtitle="回收一場空"
-      :photo="require('@/assets/images/story0/index_cover_background_video_m.jpg')"
-      :photo-large="require('@/assets/images/story0/index_cover_background_video_pc.jpg')"
-      :video="require('@/assets/media/story0/index_cover_background_video_m.mp4')"
-      :video-large="require('@/assets/media/story0/index_cover_background_video_pc.mp4')"
+      
+      :video="srcRWD(require('@/assets/media/story0/index_cover_background_video_m.mp4'), require('@/assets/media/story0/index_cover_background_video_pc.mp4'))"
       :ctrl="ctrl"
       :height="height*3"
       :poster="srcRWD(require('@/assets/images/story0/index_cover_background_video_m.jpg'), require('@/assets/images/story0/index_cover_background_video_pc.jpg'))">
@@ -27,16 +25,13 @@
       ref="story1"
       :id="1"
       title="第一站　清潔隊"
-      :photo="require('./assets/images/story1/index_part1_background_video1_m.jpg')"
-      :photo-large="require('./assets/images/story1/index_part1_background_video1_pc.jpg')"
-      :video="require('./assets/media/story1/index_part1_background_video1_m.mp4')"
-      :video-large="require('./assets/media/story1/index_part1_background_video1_pc.mp4')"
+      
+      :video="srcRWD(require('./assets/media/story1/index_part1_background_video1_m.mp4'), require('./assets/media/story1/index_part1_background_video1_pc.mp4'))"
       :ctrl="ctrl"
       :height="height*4"
-      :isPause="true"
-      :poster="srcRWD(require('./assets/images/story1/index_part1_background_video1_m.jpg'), require('./assets/images/story1/index_part1_background_video1_pc.jpg'))">
+      :isPause="true">
       <Frame6 />
-      <Frame7 :ctrl="ctrl" :poster="srcRWD(require('./assets/images/story1/index_part1_background_video2_m.jpg'), require('./assets/images/story1/index_part1_background_video2_pc.jpg'))"/>
+      <Frame7 :ctrl="ctrl"/>
       <Frame8 />
     </Story>
 
@@ -44,8 +39,7 @@
       ref="story2"
       :id="2"
       title="第二站　焚化爐"
-      :photo="require('@/assets/images/story2/index_part2_background_img1_m.jpg')"
-      :photo-large="require('@/assets/images/story2/index_part2_background_img1_pc.jpg')"
+      :photo="srcRWD(require('@/assets/images/story2/index_part2_background_img1_m.jpg'), require('@/assets/images/story2/index_part2_background_img1_pc.jpg'))"
       :ctrl="ctrl"
       :height="height*6">
       <Frame10 :ctrl="ctrl"/>
@@ -58,8 +52,7 @@
       ref="story3"
       :id="3"
       title="第三站　回收場"
-      :photo="require('@/assets/images/story3/index_part3_background_img1_m.jpg')"
-      :photo-large="require('@/assets/images/story3/index_part3_background_img1_pc.jpg')"
+      :photo="srcRWD(require('@/assets/images/story3/index_part3_background_img1_m.jpg'), require('@/assets/images/story3/index_part3_background_img1_pc.jpg'))"
       :ctrl="ctrl"
       :height="height*9">
       <Frame27 :ctrl="ctrl"/>
@@ -67,9 +60,9 @@
       <Frame17 />
       <Frame175 :ctrl="ctrl"/>
       <Frame18 :ctrl="ctrl"/>
-      <Frame19 :ctrl="ctrl" :poster="srcRWD(require('@/assets/images/story3/index_part3_background_video1_m.jpg'), require('@/assets/images/story3/index_part3_background_video1_pc.jpg'))"/>
+      <Frame19 :ctrl="ctrl"/>
       <Frame20 />
-      <Frame21 :ctrl="ctrl" :poster="srcRWD(require('@/assets/images/story3/index_part3_background_video2_m.jpg'), require('@/assets/images/story3/index_part3_background_video2_pc.jpg'))"/>
+      <Frame21 :ctrl="ctrl"/>
       <Frame22 />
       <Frame23 :ctrl="ctrl"/>
       <Frame24 />
@@ -81,8 +74,7 @@
       ref="story4"
       :id="4"
       title="第四站　紙廠"
-      :photo="require('@/assets/images/story4/index_part4_background_img_m.jpg')"
-      :photo-large="require('@/assets/images/story4/index_part4_background_img_pc.jpg')"
+      :photo="srcRWD(require('@/assets/images/story4/index_part4_background_img_m.jpg'), require('@/assets/images/story4/index_part4_background_img_pc.jpg'))"
       :ctrl="ctrl"
       :height="height*6">
       <Frame27 :ctrl="ctrl"/>
@@ -93,8 +85,7 @@
       ref="story5"
       :id="5"
       ending-title="你要怎麼做"
-      :photo="require('@/assets/images/story5/index_part5_background_img_m.jpg')"
-      :photo-large="require('@/assets/images/story5/index_part5_background_img_pc.jpg')"
+      :photo="srcRWD(require('@/assets/images/story5/index_part5_background_img_m.jpg'), require('@/assets/images/story5/index_part5_background_img_pc.jpg'))"
       :ctrl="ctrl"
       :height="height*5">
       <Frame30 />
